@@ -5,26 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>N 予備校プログラミングコース・学習記録 - TaigaOzawa</title>
+  <title>N 予備校プログラミングコース学習記録 - TaigaOzawa</title>
 </head>
 
 <body>
   <header></header>
 
   <main>
-    <h1>N 予備校プログラミングコース・学習記録</h1>
+    <h1>N 予備校プログラミングコース学習記録</h1>
+
+    <p>このノートは，N 予備校プログラミングコースの学習記録 & メモです．<br>詳細は，<a href="https://www.nnn.ed.nico/pages/programming/">N
+        予備校プログラミングコースの公式ページ</a> をご覧ください．</p>
 
     <h2>入門コース「プログラミング入門 Web アプリ」</h2>
 
     <div>
       <h3>概要</h3>
-      <p>入門コースでは，主に JavaScript を用いて小規模な Web サービスを自分一人で
+      <p>入門コースの目標は，主に JavaScript を用いて小規模な Web サービスを自分一人で
         <ul>
           <li>企画</li>
           <li>開発</li>
           <li>運用</li>
         </ul>
-        できるようになることが目標である．</p>
+        できるようになること．</p>
       <p>主な内容は次のとおり：
         <ol>
           <li>HTML, CSS, JavaScript（クライアントサイド）を学ぶ．</li>
@@ -35,31 +38,98 @@
       </p>
     </div>
 
-      <h3>第１章 はじめよう -- Web プログラミング入門</h3>
+    <h3>第１章 はじめよう -- Web プログラミング入門</h3>
 
-      <h4>1-01</h4>
-      <p>
-        Google Chrome のインストールを確認し，Chrome のデベロッパーツールの console で JavaScript を実行．
-      </p>
+    <h4>1-01 Chrome / console / JavaScript</h4>
+    <p>
+      Google Chrome のインストールを確認し，Chrome のデベロッパーツールの console で JavaScript を実行．
+    </p>
 
-      <p>
-        <ul>
-          <li>console 上で <code>alert(hoge)</code>（<code>hoge</code> は計算式）を入力．=> アラートダイアログに <code>hoge</code>（計算結果）が表示される．</li>
-          <li><code>piyo</code>（文字列）を表示させたいときは，シングルクオーテーション（'）でくくって <code>alert('piyo')</code> とする．</li>
-        </ul>
-      </p>
+    <p>
+      <ul>
+        <li>console 上で <code>alert(3+3)</code>（計算式）を入力．
+          <br>=> アラートダイアログに <code>6</code>（計算結果）が表示される．
+        </li>
+        <li><code>piyo</code>（文字列）を表示させたいときは，シングルクオーテーション（'）でくくって <code>alert('piyo')</code> とする．</li>
+      </ul>
+    </p>
 
-      <h4>1-02</h4>
-      <p>
-        Visual Studio Code (VS Code) をインストールし，日本語化の拡張機能を適用．
-      </p>
-      <p>VS Code の主な補助機能：
-        <ul>
-          <li>単語の補完機能（インテリセンス）</li>
-          <li>コードを手軽に記述するための機能（Emmet）</li>
-          <li>単語の色を変える機能（シンタックスハイライト）※ シンタックス = 構文</li>
-        </ul>
-      </p>
+    <h4>1-02 VS Code / エディタの補助機能</h4>
+    <p>
+      Visual Studio Code (VS Code) をインストールし，日本語化の拡張機能を適用．
+    </p>
+    <p>VS Code の主な補助機能：
+      <ul>
+        <li>単語の補完機能（<b>インテリセンス</b>）</li>
+        <li>コードを手軽に記述するための機能（<b>Emmet</b>）</li>
+        <li>単語の色を変える機能（<b>シンタックスハイライト</b>）※ シンタックス … 構文</li>
+      </ul>
+    </p>
+
+    <h4>1-03 HTML タグ</h4>
+    <p>
+      さまざまな HTML タグを学習．</p>
+
+    <p>
+      HTML ではたとえば，
+      <pre><code>&lt;a href=&quot;google.com&quot;&gt;Google&lt;/a&gt;</code></pre>
+      の<code> &lt;a&gt;&lt;/a&gt; </code>など，タグとタグに囲まれた部分を<b>要素</b>，<code>href="google.com"</code>
+      などの部分を要素の<b>属性</b>という．<br>
+      <code>href</code> 属性は，ハイパーリンクのリンク先を <code>a</code> タグに情報として与える．
+    </p>
+
+    <p>
+      <ul>
+        <li>h タグ … 見出し．header の略．</li>
+        <li>p タグ … 段落．paragraph の略．</li>
+        <li>br タグ … 改行．line break の略．</li>
+        <li>a タグ … ハイパーリンク．anchor（船のいかり，アンカー）の略．</li>
+        <li>img タグ … 画像．image の略．src 属性は source（画像のソース）の略．alt 属性は alternate（代替）の略．alt 属性で代替テキストを指定できる．</li>
+        <li>ul タグ … 順序なしリスト．unordered list の略．</li>
+        <li>ol タグ … 順序つきリスト．ordered list の略．</li>
+        <li>li タグ … リストの項目．list item の略．ul または ol の子要素とする必要がある．</li>
+        <li><code>ul>li*6</code> のように入力して tab キーを押すとテンプレートが入力される．</li>
+        <li>table タグ … 表（table）．</li>
+        <li>tr タグ … 表の 1 行．table row の略．</li>
+        <li>th タグ … 表の見出し．table header の略．</li>
+        <li>td タグ … 表のデータ．table data の略．</li>
+        <li><code>table>(tr>(th*2))+(tr>td*2)*2</code> のように入力して tab キーを押すと，次のようなテンプレートが入力される：
+          <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;&lt;/th&gt;
+        &lt;th&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+          <table>
+            <tr>
+              <th>見出し A </th>
+              <th>見出し B </th>
+            </tr>
+            <tr>
+              <td>データ 1 </td>
+              <td>データ 2 </td>
+            </tr>
+            <tr>
+              <td>データ 3 </td>
+              <td>データ 4 </td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </p>
+
+
+
+
+
 
     <p><a href="/index.html">トップページに戻る ></a></p>
   </main>
