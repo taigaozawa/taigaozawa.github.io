@@ -7,12 +7,18 @@
 /*===============*/
 
 
-/********** 基本設定 **********/
+/********** タグ設定 ************************************************/
 
 html {
   font-size: 10px; /* 1rem = 10px と定義 */
+  font-family: "Helvetica", "Arial", "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
 
+a, a:visited {
+  color: rgb(0, 132, 255);
+}
+
+/********** レイアウト設定 ************************************************/
 
 /*== header ====================================*/
 
@@ -28,7 +34,7 @@ html {
 
 .header__logo {
   color: orange;
-  font-size: 1.9rem;
+  font-size: 2.3rem;
   font-weight: bold;
   padding-top: 2rem;
   padding-bottom:2rem;
@@ -36,23 +42,24 @@ html {
 
 .header__logo--eng {
   color: white;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 /* header のレスポンシブ対応 */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .header__logo{
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   padding-top: 1.4rem;
-  padding-bottom: 1.4rem;
+  padding-bottom: 1.3rem;
   }
   .header__logo--eng {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 
 
 /*== WELCOME WINDOW ====================================*/
+
 .welcome {
   position: relative;
 }
@@ -62,7 +69,7 @@ html {
 }
 
 .welcome__message {
-  color: white;
+  color: rgb(255, 255, 255);
   position: absolute;
   font-size: 6rem;
   font-weight: bold;
@@ -107,7 +114,6 @@ html {
 }
 
 
-
 /*== main ==================================*/
 
 .mainInner {
@@ -117,8 +123,22 @@ html {
 }
 
 /*== footer ==================================*/
+
 .footerInner {
   width: 90%;
   max-width: 1024px;
   margin: auto;
+}
+
+/********** コンポーネント設定 **********************************************************/
+
+.mainIntro__name {
+  font-size: 2rem;
+}
+
+/* .mainIntro のレスポンシブ対応 */
+@media screen and (max-width: 600px) {
+  .mainIntro__name{
+  font-size: 1.8rem;
+  }
 }
