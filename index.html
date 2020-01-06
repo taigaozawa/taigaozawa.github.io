@@ -5,50 +5,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/default.css">
   <title>小澤泰河 TaigaOzawa</title>
 </head>
 
 <body>
-  <header>
-    <div class="logo">
-      小澤泰河 TaigaOzawa
+
+  <header class="header">
+    <div class="headerInner">
+      <div class="header__logo">
+        小澤泰河 <span class="header__logo--eng">TaigaOzawa</span>
+      </div>
     </div>
   </header>
+
+
+  <div class="welcome">
+    <img src="./IMAGES/TMU.jpg" alt="東京都立大学南大沢キャンパス" class="welcome__image">
+    <div class="welcome__message">ようこそ
+      <span class="welcome__message--eng">WELCOME</span>
+    </div>
+  </div>
+
   <main>
-    <div class="welcome_image">
-      <h1>ようこそ Welcome</h1>
-    </div>
+    <div class="mainInner">
 
-    <div class="intro_main">
-      <h1>小澤 泰河 Taiga Ozawa</h1>
-      <p>首都大学東京・理工学系物理学コース</p>
-      <p>Tokyo Metropolitan University, Department of Physics</p>
-      <p><a href="profile/index.html">詳しいプロフィールを見る ></a></p>
-    </div>
+      <div class="mainIntro">
+        <h1 class="mainIntro__name">小澤 泰河 Taiga Ozawa</h1>
+        <p class="mainIntro__position">首都大学東京・理工学系物理学コース</p>
+        <p>Tokyo Metropolitan University, Department of Physics</p>
+        <p class="seeDetails"><a href="profile/index.html">詳しいプロフィールを見る ></a></p>
+      </div>
 
-    <div class="intro_news">
-      <h1>お知らせ</h1>
-      <p><a href="news/index.html">お知らせの一覧を見る ></a></p>
-    </div>
+      <div class="newsList">
+        <h2 class="newsList__title">お知らせ</h2>
+        <p class="seeDetails"><a href="news/index.html">お知らせの一覧を見る ></a></p>
+      </div>
 
-    <div class="intro_sub">
-      <h1>ノート</h1>
-      <p><a href="notes/index.html">ノートの一覧を見る ></a></p>
-    </div>
+      <div class="notesList">
+        <h2 class="notesList__title">ノート</h2>
+        <p class="seeDetails"><a href="notes/index.html">ノートの一覧を見る ></a></p>
+      </div>
 
-    <div class="intro_sub">
-      <h1>ポートフォリオ</h1>
-      <p><a href="portfolio/index.html">制作物の一覧を見る ></a></p>
-    </div>
+      <div class="pfList">
+        <h2 class="pfList__title">ポートフォリオ</h2>
+        <p class="seeDetails"><a href="portfolio/index.html">制作物の一覧を見る ></a></p>
+      </div>
 
-    <div class="intro_contact">
-      <h2>お問合せ</h2>
-      <p><a href="contact/index.html">お問合せページ ></a></p>
+      <div class="contactInfo">
+        <h2 class="contactInfo__title">お問合せ</h2>
+        <p class="seeDetails"><a href="contact/index.html">お問合せページ ></a></p>
+      </div>
+
+      <div class="developInfo">
+        <h2 class="developInfo__title">開発</h2>
+        <p class="seeDetails"><a href="develop/index.html">開発ページ ></a></p>
+      </div>
+
     </div>
   </main>
 
   <footer>
-    <p>Copyright ©2019 Taiga Ozawa. All rights reserved.</p>
+    <div class="footerInner">
+      <p>Copyright ©2019 Taiga Ozawa. All rights reserved.</p>
+    </div>
   </footer>
 
 </body>

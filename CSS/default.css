@@ -1,0 +1,124 @@
+/*= default.css ==
+
+/*  この CSS は部分的に BEM (Block - Element - Modifier) 設計を取り入れています．
+
+/*  Taiga Ozawa, 2020
+
+/*===============*/
+
+
+/********** 基本設定 **********/
+
+html {
+  font-size: 10px; /* 1rem = 10px と定義 */
+}
+
+
+/*== header ====================================*/
+
+.header {
+  background-color: rgba(0, 0, 0, 0.911);
+}
+
+.headerInner {
+  width: 90%;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.header__logo {
+  color: orange;
+  font-size: 1.9rem;
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-bottom:2rem;
+}
+
+.header__logo--eng {
+  color: white;
+  font-size: 1.6rem;
+}
+
+/* header のレスポンシブ対応 */
+@media screen and (max-width: 480px) {
+  .header__logo{
+  font-size: 1.4rem;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  }
+  .header__logo--eng {
+    font-size: 1.2rem;
+  }
+}
+
+
+/*== WELCOME WINDOW ====================================*/
+.welcome {
+  position: relative;
+}
+
+.welcome__image {
+  width: 100%;
+}
+
+.welcome__message {
+  color: white;
+  position: absolute;
+  font-size: 6rem;
+  font-weight: bold;
+  bottom: 5rem;
+  right: 10%;
+}
+
+.welcome__message--eng {
+  font-size: 4rem;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 1024px) {
+  .welcome__message {
+    font-size: 5rem;
+    bottom: 3rem;
+    right: 10%;
+    }
+  .welcome__message--eng {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .welcome__message {
+  font-size: 4rem;
+  right: 3rem;
+  bottom: 10%;
+  }
+  .welcome__message--eng {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .welcome__message {
+  font-size: 2.5rem;
+  right: 3rem;
+  bottom: 15%;
+  }
+  .welcome__message--eng {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+/*== main ==================================*/
+
+.mainInner {
+  width: 90%;
+  max-width: 1024px;
+  margin:auto;
+}
+
+/*== footer ==================================*/
+.footerInner {
+  width: 90%;
+  max-width: 1024px;
+  margin: auto;
+}
