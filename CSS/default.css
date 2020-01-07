@@ -14,9 +14,6 @@ html {
   font-family: "Helvetica", "Arial", "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
 
-a, a:visited {
-  color: rgb(0, 132, 255);
-}
 
 /********** レイアウト設定 ************************************************/
 
@@ -77,7 +74,7 @@ a, a:visited {
   right: 10%;
 }
 
-.welcome__message--eng {
+.welcome__messageEng {
   font-size: 4rem;
 }
 
@@ -88,7 +85,7 @@ a, a:visited {
     bottom: 3rem;
     right: 10%;
     }
-  .welcome__message--eng {
+  .welcome__messageEng {
     font-size: 3rem;
   }
 }
@@ -98,7 +95,7 @@ a, a:visited {
   right: 3rem;
   bottom: 10%;
   }
-  .welcome__message--eng {
+  .welcome__messageEng {
     font-size: 2.5rem;
   }
 }
@@ -108,7 +105,7 @@ a, a:visited {
   right: 3rem;
   bottom: 15%;
   }
-  .welcome__message--eng {
+  .welcome__messageEng {
     font-size: 1.5rem;
   }
 }
@@ -132,13 +129,62 @@ a, a:visited {
 
 /********** コンポーネント設定 **********************************************************/
 
-.mainIntro__name {
-  font-size: 2rem;
+/*== リンク =================================*/
+.seeDetails {
+  color: rgb(0, 89, 255);
 }
-
 /* .mainIntro のレスポンシブ対応 */
 @media screen and (max-width: 600px) {
   .mainIntro__name{
   font-size: 1.8rem;
   }
 }
+
+/*== ボタン ====================================*/
+.button {
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgb(58, 58, 58);
+  font-size: 1.5rem;
+  border-radius: 8px;
+  color: white;
+  width: auto;
+  display: inline-block;
+}
+.button:hover{
+  background-color: rgb(99, 99, 99);
+}
+
+
+/*== 自己紹介 ==================================*/
+.mainIntro {
+  text-align: center;
+  padding-top: 1rem;
+  margin-bottom: 5rem
+}
+
+.mainIntro__title {
+  border-bottom: solid 2px orange;
+  padding-bottom: 0.5rem;
+}
+.mainIntro__name {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.mainIntro__position {
+  font-size: 1.6rem;
+  margin: 5px;
+}
+.mainIntro__position--eng {
+  font-size: 1.5rem;
+}
+.mainIntro__buttonContainer {
+  margin-top: 2rem;
+}
+
+
