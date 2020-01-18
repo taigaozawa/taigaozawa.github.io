@@ -5,63 +5,301 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=h1, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/default.css">
-  <title>学習記録ノート - ノート</title>
+  <link rel="stylesheet" href="../../CSS/ress.css">
+  <link rel="stylesheet" href="../../CSS/default.css">
+  <title>学習記録 - ノート</title>
 </head>
 
 <body>
-  <header></header>
+  <header class="defaultHeader">
+
+    <div class="headerInner">
+
+      <div class="headerInner__logo">
+        <a href="../../index.html">
+          <span class="headerInner__logo">小澤泰河</span>
+          <span class="headerInner__logo--eng">TaigaOzawa</span>
+        </a>
+      </div>
+
+      <div class="headerInner__menu">
+        <ul class="stdMenu">
+          <li class="stdMenu__item">
+            <a class="itemAnchor" href="../../index.html">
+              <div class="itemAnchor__name">ホーム</div>
+              <div class="itemAnchor__name--eng">Home</div>
+            </a>
+          </li>
+          <li class="stdMenu__item">
+            <a class="itemAnchor" href="../../profile/index.html">
+              <div class="itemAnchor__name">プロフィール</div>
+              <div class="itemAnchor__name--eng">Profile</div>
+            </a>
+          </li>
+          <li class="stdMenu__item">
+            <a class="itemAnchor" href="../../notes/index.html">
+              <div class="itemAnchor__name">ノート</div>
+              <div class="itemAnchor__name--eng">Notes</div>
+            </a>
+          </li>
+          <li class="stdMenu__item">
+            <a class="itemAnchor" href="../../portfolio/index.html">
+              <div class="itemAnchor__name">ポートフォリオ</div>
+              <div class="itemAnchor__name--eng">Portfolio</div>
+            </a>
+          </li>
+          <li class="stdMenu__item">
+            <a class="itemAnchor" href="../../news/index.html">
+              <div class="itemAnchor__name">お知らせ</div>
+              <div class="itemAnchor__name--eng">News</div>
+            </a>
+          </li>
+          <li class="stdMenu__item">
+            <a class="itemAnchor" href="../../portfolio/index.html">
+              <div class="itemAnchor__name">お問合せ</div>
+              <div class="itemAnchor__name--eng">Contact</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
 
   <main>
-    <h1>学習記録リスト</h1>
-
-    <p>分野ごとに学習した項目を整理しています．</p>
-
-    <h2>コンピュータ</h2>
-    <p>コンピュータに関する学習記録です．</p>
-
-    <div class="rec_box">
-      <h3>プログラミング</h3>
-      <div class="rec_innerBox">
-        <ul>
-          <li>N 予備校プログラミングコース
-            <ul>
-              <li><a href="n_webapp.html">Web アプリ開発</a>（HTML&CSS / JavaScript / Linux / VCS / Node.js / セキュリティ / Web）</li>
-              <li>スマートフォンアプリ開発</li>
-              <li>大規模 Web アプリ開発</li>
-              <li>コンピュータ・サイエンス</li>
-              <li>機械学習</li>
-            </ul>
-          </li>
-          <li>C / C++</li>
-          <li>Python</li>
-          <li>その他</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="rec_box">
-      <h3>Web デザイン</h3>
-      <div class="rec_innerBox">
-        <ul>
-          <li>N 予備校 Web デザインコース
-            <ul>
-              <li>グラフィックデザイン（Illustrator / Photoshop / タイポグラフィ / 配色 / 画像）</li>
-              <li>Web デザイン（HTML&CSS / JavaScript / jQuery / Adobe XD / WordPress）</li>
-            </ul>
-          </li>
-          <li>CSS 設計</li>
-          <li>その他</li>
-        </ul>
-      </div>
+    <div class="pageTitle">
+      <img src="" alt="" class="pageTitle__image">
+      <h1 class="pageTitle__letter">学習記録</h1>
+      <p class="pageTitle__info">分野ごとの学習記録と使用した教材を紹介しています。</p>
     </div>
 
 
-    <h2>物理・数学</h2>
-    <p>物理や数学に関する学習記録です．</p>
+    <div class="mainInner">
 
-    <p><a href="/index.html">トップページに戻る ></a></p>
+
+      <div class="category">
+        <h2 class="category__heading">コンピュータ分野</h2>
+
+        <div class="category__subCategory">
+          <div class="subCategory">
+            <h3 class="subCategory__heading">コンピュータ全般</h3>
+            <div class="subCategory__contents">
+              <ul class="contents">
+                <li class="contents__item">コンピュータの初歩</li>
+                <li class="contents__item">基本情報技術者試験</li>
+                <li class="contents__item">応用情報技術者試験</li>
+                <li class="contents__item">IT 業界の基本知識</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="category__subCategory">
+          <div class="subCategory">
+            <h3 class="subCategory__heading">プログラミング言語</h3>
+            <div class="subCategory__contents">
+              <ul class="contents">
+                <li class="contents__item">C, C++, C# </li>
+                <li class="contents__item">JavaScript, Node.js</li>
+                <li class="contents__item">Python</li>
+                <li class="contents__item">Fortran</li>
+                <li class="contents__item">Java</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="category__subCategory">
+          <div class="subCategory">
+            <h3 class="subCategory__heading">Web デザイン</h3>
+            <div class="subCategory__contents">
+              <ul class="contents">
+                <li class="contents__item">HTML, CSS, JavaScript, jQuery</li>
+                <li class="contents__item">CSS 設計手法</li>
+                <li class="contents__item">グラフィックデザイン</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="category__subCategory">
+          <div class="subCategory">
+            <h3 class="subCategory__heading">ソフトウェア開発一般</h3>
+            <div class="subCategory__contents">
+              <ul class="contents">
+                <li class="contents__item">Linux</li>
+                <li class="contents__item">Git, GitHub</li>
+                <li class="contents__item">ソフトウェア設計</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="category__subCategory">
+          <div class="subCategory">
+            <h3 class="subCategory__heading">アプリケーション開発</h3>
+            <div class="subCategory__contents">
+              <ul class="contents">
+                <li class="contents__item">Web アプリ開発</li>
+                <li class="contents__item">iOS アプリ開発</li>
+                <li class="contents__item">Android アプリ開発</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="category__subCategory">
+          <div class="subCategory">
+            <h3 class="subCategory__heading">コンピュータ科学の基礎</h3>
+            <div class="subCategory__contents">
+              <ul class="contents">
+                <li class="contents__item">アルゴリズムとデータ構造</li>
+                <li class="contents__item">情報数学，離散数学，論理学</li>
+                <li class="contents__item">計算の理論</li>
+                <li class="contents__item">コンピュータ・アーキテクチャ</li>
+                <li class="contents__item">プログラミング言語論</li>
+                <li class="contents__item">オペレーティングシステム</li>
+                <li class="contents__item">ネットワーク</li>
+                <li class="contents__item">セキュリティ，暗号技術</li>
+                <li class="contents__item">数値計算</li>
+                <li class="contents__item">機械学習と人工知能</li>
+                <li class="contents__item">コンピュータ・グラフィックス</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="category">
+        <h2 class="category__heading">数学・物理学分野</h2>
+
+        <div class="category__subCategory">
+          <div class="subCategory">
+            <h3 class="subCategory__heading">数学</h3>
+            <div class="subCategory__contents">
+              <ul class="contents">
+                <li class="contents__item">線型代数学</li>
+                <li class="contents__item">微分積分学</li>
+                <li class="contents__item">集合と論理</li>
+                <li class="contents__item">離散数学</li>
+                <li class="contents__item">微分方程式</li>
+                <li class="contents__item">ベクトル解析</li>
+                <li class="contents__item">複素関数</li>
+                <li class="contents__item">フーリエ解析</li>
+                <li class="contents__item">代数学</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="category__subCategory">
+          <div class="subCategory">
+            <h3 class="subCategory__heading">物理数学</h3>
+            <div class="subCategory__contents">
+              <ul class="contents">
+                <li class="contents__item">物理数学</li>
+                <li class="contents__item">振動・波動</li>
+                <li class="contents__item">特殊関数</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="category__subCategory">
+          <div class="subCategory">
+            <h3 class="subCategory__heading">力学</h3>
+            <div class="subCategory__contents">
+              <ul class="contents">
+                <li class="contents__item">初等力学</li>
+                <li class="contents__item">解析力学</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="category__subCategory">
+          <div class="subCategory">
+            <h3 class="subCategory__heading">電磁気学</h3>
+            <div class="subCategory__contents">
+              <ul class="contents">
+                <li class="contents__item">初等電磁気学</li>
+                <li class="contents__item">理論電磁気学</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="category__subCategory">
+          <div class="subCategory">
+            <h3 class="subCategory__heading">量子力学</h3>
+            <div class="subCategory__contents">
+              <ul class="contents">
+                <li class="contents__item">初等量子力学</li>
+                <li class="contents__item">量子論の基礎</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="category__subCategory">
+          <div class="subCategory">
+            <h3 class="subCategory__heading">熱力学・統計力学</h3>
+            <div class="subCategory__contents">
+              <ul class="contents">
+                <li class="contents__item">熱力学</li>
+                <li class="contents__item">統計力学</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="category__subCategory">
+          <div class="subCategory">
+            <h3 class="subCategory__heading">相対性理論</h3>
+            <div class="subCategory__contents">
+              <ul class="contents">
+                <li class="contents__item">特殊相対論</li>
+                <li class="contents__item">一般相対論</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="category__subCategory">
+          <div class="subCategory">
+            <h3 class="subCategory__heading">物性物理学</h3>
+            <div class="subCategory__contents">
+              <ul class="contents">
+                <li class="contents__item">連続体・流体力学</li>
+                <li class="contents__item">光学</li>
+                <li class="contents__item">固体物理学</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="category__subCategory">
+          <div class="subCategory">
+            <h3 class="subCategory__heading">素粒子・原子核・宇宙物理学</h3>
+            <div class="subCategory__contents">
+              <ul class="contents">
+                <li class="contents__item">場の理論</li>
+                <li class="contents__item">原子核物理学
+                </li>
+                <li class="contents__item">宇宙物理学</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p><a href="/index.html">トップページに戻る ></a></p>
+    </div>
+
   </main>
 
   <footer></footer>

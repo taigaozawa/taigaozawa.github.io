@@ -1,0 +1,510 @@
+/*= default.css ==
+
+/*  この CSS は部分的に BEM (Block - Element - Modifier) 設計を取り入れています．
+
+/*  Taiga Ozawa, 2020
+
+/*===============*/
+
+
+/********** タグ設定 ************************************************/
+
+html {
+  font-size: 10px; /* 1rem = 10px と定義 */
+  font-family: "Helvetica", "Arial", "Hiragino Kaku Gothic ProN", "NotoSansCJKjp", "メイリオ", sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+/********** レイアウト設定 ************************************************/
+
+/*== header ====================================*/
+
+.header {
+  background-color: rgba(0, 0, 0, 0.911);
+}
+
+.headerInner {
+  width: 90%;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.header__logo {
+  color: orange;
+  font-size: 2.3rem;
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-bottom:2rem;
+}
+
+.header__logo--eng {
+  color: white;
+  font-size: 2rem;
+}
+
+/* header のレスポンシブ対応 */
+@media screen and (max-width: 600px) {
+  .header__logo{
+  font-size: 1.8rem;
+  padding-top: 1.4rem;
+  padding-bottom: 1.3rem;
+  }
+  .header__logo--eng {
+    font-size: 1.4rem;
+  }
+}
+
+
+/*== WELCOME WINDOW ====================================*/
+
+.welcome {
+  position: relative;
+}
+
+.welcome__image {
+  width: 100%;
+}
+
+.welcome__message {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  font-size: 6rem;
+  font-weight: bold;
+  bottom: 5rem;
+  right: 10%;
+}
+
+.welcome__messageEng {
+  font-size: 4rem;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 1024px) {
+  .welcome__message {
+    font-size: 5rem;
+    bottom: 3rem;
+    right: 10%;
+    }
+  .welcome__messageEng {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .welcome__message {
+  font-size: 4rem;
+  right: 3rem;
+  bottom: 10%;
+  }
+  .welcome__messageEng {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .welcome__message {
+  font-size: 2.5rem;
+  right: 3rem;
+  bottom: 15%;
+  }
+  .welcome__messageEng {
+    font-size: 1.5rem;
+  }
+}
+
+/*== WIDE IMAGE ===========================*/
+.wideImage {
+  margin-top: 4rem;
+  position: relative;
+}
+.wideImage__image {
+  width: 100%;
+}
+.messageBox {
+  position: absolute;
+  display: flex;
+  top: 15%;
+  left: 15%;
+}
+.transContainer {
+  background-color: rgba(255, 255, 255, 0.884);
+  padding: 4rem;
+  margin: 1rem;
+  display:flex;
+  flex-direction: column;
+}
+.transContainer:hover {
+  background-color: rgba(255, 255, 255, 0.781);
+}
+.transTitle {
+  display: flex;
+  align-items: center;
+}
+.transTitle__title {
+  font-size: 2.5rem;
+}
+.transTitle__title--eng {
+  font-size: 2rem;
+}
+/* WIDE IMAGE のレスポンシブ対応 */
+@media screen and (max-width: 900px) {
+  .messageBox {
+    top: 5%;
+    left: 5%;
+  }
+  .transContainer {
+    padding: 2rem;
+    line-height: 1.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .messageBox {
+    flex-direction: column;
+  }
+  .transContainer{
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    flex-direction: row;
+    margin: 0.3rem;
+    align-items: center;
+  }
+  .transTitle__title {
+    font-size: 1.7rem;
+  }
+  .transTitle__title--eng{
+    font-size: 1.4rem;
+    margin-right: 1rem;
+  }
+  .seeDetails{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .messageBox {
+    position: relative;
+    width:92%;
+    margin-top: 2rem;
+  }
+  .transContainer{
+    background-color: rgb(233, 233, 233);
+    border: solid 1px rgb(41, 41, 41);
+  }
+  .transTitle__title {
+    font-size: 1.3rem;
+  }
+  .transTitle__title--eng {
+    font-size: 1rem;
+  }
+}
+
+
+/*== main ==================================*/
+
+.mainInner {
+  width: 90%;
+  max-width: 1024px;
+  margin:auto;
+}
+
+/*== footer ==================================*/
+
+.footerInner {
+  width: 90%;
+  max-width: 1024px;
+  margin: auto;
+}
+footer {
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  background-color: rgb(199, 199, 199);
+  padding-top: 1.5rem;
+  padding-bottom: 4rem;
+}
+/* レスポンシブ対応 */
+@media screen and (max-width: 450px) {
+  footer{
+    font-size: 1.2rem;
+  }
+}
+
+/********** コンポーネント設定 **********************************************************/
+
+/*== リンク =================================*/
+.seeDetails {
+  color: rgb(0, 89, 255);
+  font-size: 1.4rem;
+}
+/* .mainIntro のレスポンシブ対応 */
+@media screen and (max-width: 600px) {
+  .mainIntro__name{
+  font-size: 1.8rem;
+  }
+}
+
+/*== ボタン ====================================*/
+.button {
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  border: solid 1.5px rgb(37, 37, 37);
+  font-size: 1.5rem;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  width: auto;
+  display: inline-block;
+  line-height: 2rem;
+  font-weight: bold;
+}
+.button--orangeLetter {
+  color: orange;
+}
+.button:hover{
+  background-color: rgb(226, 226, 226);
+  color: rgb(71, 71, 71);
+  border-color: rgb(83, 83, 83);
+}
+.buttonGrad {
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  border: solid 2px black;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  width: auto;
+  display: inline-block;
+  line-height: 2rem;
+    background-image: linear-gradient(rgb(139, 139, 139) 0%, rgb(24, 24, 24) 100%);
+}
+.buttonGrad:hover{
+  background-image: linear-gradient(rgb(177, 177, 177) 0%, rgb(82, 82, 82) 100%);
+}
+.iconContainer{
+  margin-top: 0rem;
+}
+.iconContainer__icon{
+  font-size: 4.5rem;
+  text-align: center;
+}
+.iconContainer__caption {
+  margin: 0rem;
+  padding: 0rem;
+  font-size: 1.5rem;
+  line-height: 0.5rem;
+  text-align: center;
+}
+.iconIsHover{
+  width: auto;
+  display: inline-block;
+  color: rgb(34, 34, 34);
+}
+.iconIsHover:hover{
+  color: rgb(102, 102, 102);
+}
+
+/* ボタンのレスポンシブ対応 */
+@media screen and (max-width: 600px) {
+  .button {
+    font-size: 1.0rem;
+    line-height: 1.2rem;
+  }
+  .iconContainer__icon {
+    font-size: 2rem;
+  }
+  .iconContainer__caption {
+    font-size: 0.5rem;
+  }
+}
+
+/*== 紹介 ==================================*/
+.mainIntroContainer {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.mainIntro {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 1rem;
+}
+.titleContainer {
+  background-color: rgb(0, 0, 53);
+  color: white;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  line-height: 2.5rem;
+  margin-right: 3rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 9rem;
+}
+.titleContainer__title {
+  font-size: 2rem;
+}
+.titleCOntainer__title--eng {
+  font-size: 1.8rem;
+}
+.mainIntro__nameContainer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+.introName {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.introName--eng {
+  font-size: 2.0rem;
+}
+.mainIntro__positionContainer {
+  display: flex;
+  flex-direction: column;
+}
+.introPosition {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+.introPosition--eng {
+  font-size: 1.5rem;
+}
+.mainIntro__buttonContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 16rem;
+}
+.iconContainer--introGithubTwi {
+  margin-left: 4rem;
+}
+/* レスポンシブ対応 */
+@media screen and (max-width: 735px) {
+  .mainIntro {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .titleContainer{
+    margin: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 6.5rem;
+    line-height: 2rem;
+  }
+  .titleContainer__title {
+    font-size: 1.5rem;
+  }
+  .titleContainer__title--eng{
+    font-size: 1.2rem;
+  }
+  .mainIntro__nameContainer{
+    margin:0;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .introName {
+    font-size: 2.5rem;
+  }
+  .introName--eng{
+    font-size: 2rem;
+  }
+  .mainIntro__positionContainer{
+    margin-bottom:2rem;
+  }
+  .introPosition {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .introPosition--eng {
+    font-size: 1.0rem;
+  }
+  .mainIntro__buttonContainer {
+    margin: 0;
+    justify-content: center;
+  }
+  .iconContainer--introGithubTwi {
+    margin-left: 2rem;
+  }
+}
+
+/*== お知らせ ==================================*/
+.newsList {
+  display: flex;
+  align-items: center;
+}
+.newsContainer {
+  display:flex;
+  flex-direction: column;
+  line-height: 2.7rem;
+  padding-left: 3rem;
+  background-color: rgb(182, 182, 182);
+  flex-basis: 60%;
+  height: 11rem;
+  justify-content: center;
+  align-self: center;
+}
+.newsContainer__breaking {
+  font-size: 2.0rem;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 735px) {
+  .newsList {
+    flex-direction: column;
+  }
+  .newsContainer {
+    padding: 2rem;
+    margin-top: 1rem;
+    width: 90%;
+    line-height: 1.8rem;
+  }
+  .newsContainer__breaking {
+    font-size: 1.5rem;
+  }
+}
+
+/*== お問い合わせ / 開発 ==============================*/
+.contactInfo {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+}
+.developInfo {
+  margin-top: 0rem;
+  display: flex;
+  align-items: center;
+}
+.stdTitle {
+  line-height: 2rem;
+  margin-right: 3rem;
+}
+.stdTitle__title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.stdTitle__title--eng {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+/* レスポンシブ対応 */
+@media screen and (max-width: 450px) {
+  .stdTitle__title{
+    font-size:1.5rem;
+  }
+  .stdTitle__title--eng{
+    font-size: 1.2rem;
+  }
+}
