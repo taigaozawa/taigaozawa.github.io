@@ -8,6 +8,9 @@ html {
   font-family: "Helvetica", "Arial", "Hiragino Kaku Gothic ProN", "NotoSansCJKjp", "メイリオ", sans-serif;
   font-weight: 400;
 }
+.stdLink {
+  color: rgb(0, 93, 214);
+}
 
 /* INNER */
 .headerInner, .mainInner, .footerInner {
@@ -131,7 +134,7 @@ html {
     z-index: 999;/*最前面に*/
     width: 100%;/*右側に隙間を作る（閉じるカバーを表示）*/
     height: 50%;
-    background: rgba(0, 0, 0, 0.788);/*背景色*/
+    background: rgba(0, 0, 0, 0.952);/*背景色*/
     transition: .3s ease-in-out;/*滑らかに表示*/
     -webkit-transform: translateX(-105%);
     transform: translateX(-105%);/*左に隠しておく*/
@@ -170,4 +173,138 @@ html {
     font-weight: bold;
   }
   
+}
+
+/*** コンポーネント ***/
+
+/* PAGE TITLE */
+.pageTitle, .pageTitle--profile, .pageTitle--notes, .pageTitle--portfolio, .pageTitle--news, .pageTitle--contact {
+  background-color: gray;
+  width: 100%;
+  height: 20rem;
+}
+.pageTitle--notes {
+  background-color: rgb(16, 38, 81);
+  color: white;
+}
+.pageTitleLetters {
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 5rem;
+  font-weight: bold;
+}
+.pageTitleHeading__jpn {
+  font-size: 3rem;
+}
+.pageTitleHeading__eng {
+  font-size: 2.5rem;
+}
+.pageTitleInfo {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+/* PAGE TITLE レスポンシブ */
+@media screen and (max-width:700px) {
+  .pageTitleLetters {
+    text-align: center;
+  }
+  .pageTitleHeading {
+    margin-bottom: 1rem;
+  }
+  .pageTitleHeading__jpn {
+    font-size: 2.5rem;
+  }
+  .pageTitleHeading__eng {
+    font-size: 1.5rem;
+  }
+  .pageTitleInfo {
+    font-size: 1.5rem;
+  }
+}
+
+/* NOTES */
+.allCategories{ 
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+}
+.allCategories__category {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.category {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.category__heading, .category__heading--computer, .category__heading--mathPhys {
+  font-size: 2rem;
+  border-left: solid 10px rgb(0, 0, 0);
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  background-color: rgb(39, 39, 39);
+  color: white;
+}
+.category__heading--computer {
+  border-left: solid 10px rgb(0, 132, 255);
+}
+.category__heading--mathPhys{
+  border-left: solid 10px rgb(255, 0, 0);
+}
+.subCategoryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.category__subCategory {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  background-color: rgb(221, 221, 221);
+  border-radius: 1rem;
+}
+.subCategory {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
+}
+.subCategory__heading, .subCategory__heading--computer, .subCategory__heading--mathPhys{
+  border-bottom: solid 2px rgb(0, 0, 0);
+  display: inline-block;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  padding-left: 1rem;
+  padding-right: 1.5rem;
+}
+.subCategory__heading--computer {
+  border-bottom: solid 2px rgb(0, 105, 204);
+}
+.subCategory__heading--mathPhys {
+  border-bottom: solid 2px rgb(255, 0, 0);
+}
+.subCategory__contents {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: 1.6rem;
+}
+.contents {
+  list-style: none;
+  line-height: 2.8rem;
+  font-weight: bold;
+}
+/* NOTES レスポンシブル */
+@media screen and (max-width:700px) {
+  .subCategoryContainer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .category__subCategory {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
