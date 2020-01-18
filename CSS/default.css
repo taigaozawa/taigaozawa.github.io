@@ -242,7 +242,36 @@ html {
   }
 }
 
-/* NOTES */
+/* STANDARD HEADING */
+.stdHeading, .stdHeading--light {
+  font-size: 2rem;
+  border-left: solid 10px rgb(155, 155, 155);
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  background-color: rgb(39, 39, 39);
+  color: white;
+}
+.stdHeading--light {
+  border-left: solid 10px rgb(31, 31, 31);
+  border-bottom: solid 1px rgb(31, 31, 31);
+  background-color: white;
+  color: black;
+}
+
+/* STANDARD LIST */
+.stdList {
+  line-height: 2rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.stdList__item {
+  margin-left: 4rem;
+}
+
+
+/* CATEGORIES */
 .allCategories{ 
   margin-top: 5rem;
   margin-bottom: 2rem;
@@ -334,3 +363,14 @@ html {
   }
 }
 
+/* DEVELOP */
+.devSection {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+.aboutThisSite {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
