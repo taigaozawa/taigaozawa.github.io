@@ -374,10 +374,23 @@ html {
 }
 
 /* NOTES */
-.noteBox {
+.noteGenre__noteContainer {
+  display: flex;
+  justify-content: center;
+}
+.noteBox, .noteBox--record {
   margin-top: 2rem;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+.noteBox--record {
+  width: 90%;
+}
+.noteBox--hover:hover > .noteBox__contents {
+  background-color: rgb(155, 155, 155);
+}
+.noteBox--record--hover:hover > .noteBox__contents {
+  background-color: rgb(207, 207, 207);
 }
 .noteBox__heading, .noteBox__heading--record {
   background-color: rgb(44, 44, 44);
