@@ -9,10 +9,6 @@
 
 /********** タグ設定 ************************************************/
 
-html {
-  font-size: 10px; /* 1rem = 10px と定義 */
-  font-family: "Helvetica", "Arial", "Hiragino Kaku Gothic ProN", "NotoSansCJKjp", "メイリオ", sans-serif;
-}
 
 p {
   margin: 0;
@@ -21,43 +17,6 @@ p {
 
 
 /********** レイアウト設定 ************************************************/
-
-/*== header ====================================*/
-
-.header {
-  background-color: rgba(0, 0, 0, 0.911);
-}
-
-.headerInner {
-  width: 90%;
-  max-width: 1024px;
-  margin: auto;
-}
-
-.header__logo {
-  color: orange;
-  font-size: 2.3rem;
-  font-weight: bold;
-  padding-top: 2rem;
-  padding-bottom:2rem;
-}
-
-.header__logo--eng {
-  color: white;
-  font-size: 2rem;
-}
-
-/* header のレスポンシブ対応 */
-@media screen and (max-width: 600px) {
-  .header__logo{
-  font-size: 1.8rem;
-  padding-top: 1.4rem;
-  padding-bottom: 1.3rem;
-  }
-  .header__logo--eng {
-    font-size: 1.4rem;
-  }
-}
 
 
 /*== WELCOME WINDOW ====================================*/
@@ -317,10 +276,10 @@ footer {
     line-height: 1.2rem;
   }
   .iconContainer__icon {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .iconContainer__caption {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -348,7 +307,7 @@ footer {
   margin-right: 3rem;
   margin-top: 0;
   margin-bottom: 0;
-  width: 9rem;
+  width: 12rem;
 }
 .titleContainer__title {
   font-size: 2rem;
@@ -401,7 +360,7 @@ footer {
     padding-bottom: 1.5rem;
     padding-right: 1rem;
     padding-left: 1rem;
-    width: 6.5rem;
+    width: 10rem;
     line-height: 2rem;
   }
   .titleContainer__title {
