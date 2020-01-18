@@ -137,8 +137,8 @@ html {
     height: 50%;
     background: rgba(0, 0, 0, 0.952);/*背景色*/
     transition: .3s ease-in-out;/*滑らかに表示*/
-    -webkit-transform: translateX(-105%);
-    transform: translateX(-105%);/*左に隠しておく*/
+    -webkit-transform: translateX(105%);
+    transform: translateX(105%);/*左に隠しておく*/
   }
   
   /*チェックが入ったらもろもろ表示*/
@@ -243,7 +243,7 @@ html {
 }
 
 /* STANDARD HEADING */
-.stdHeading, .stdHeading--light {
+.stdHeading, .stdHeading--light, .stdHeading--record {
   font-size: 2rem;
   border-left: solid 10px rgb(155, 155, 155);
   padding-left: 1rem;
@@ -258,6 +258,9 @@ html {
   background-color: white;
   color: black;
 }
+.stdHeading--record {
+  border-left: solid 10px rgb(0, 102, 218);
+}
 
 /* STANDARD LIST */
 .stdList {
@@ -271,7 +274,7 @@ html {
 }
 
 
-/* CATEGORIES */
+/* STUDY RECORD */
 .allCategories{ 
   margin-top: 5rem;
   margin-bottom: 2rem;
@@ -351,7 +354,14 @@ html {
   line-height: 2.8rem;
   font-weight: bold;
 }
-/* NOTES レスポンシブル */
+.contents__item {
+  border-bottom: solid 0.5px rgba(255, 255, 255, 0);
+}
+.contents__item--hover:hover {
+  border-bottom: solid 1px black;
+}
+
+/* STUDY RECORD */
 @media screen and (max-width:700px) {
   .subCategoryContainer {
     flex-direction: column;
@@ -362,6 +372,41 @@ html {
     margin-right: 1rem;
   }
 }
+
+/* NOTES */
+.noteBox {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.noteBox__heading, .noteBox__heading--record {
+  background-color: rgb(44, 44, 44);
+  color: white;
+  padding-top:0.7rem;
+  padding-bottom: 0.5rem;
+  padding-left: 3rem;
+  font-size: 1.7rem;
+  border-radius: 20px 0 0 0;
+}
+.noteBox__heading--record {
+  background-color: rgb(0, 70, 150);
+}
+.noteBox__contents {
+  background-color: rgb(163, 163, 163);
+  font-size: 1.7rem;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+  padding-left:3rem;
+  border-radius: 0 0 0 20px;
+  border-right: dotted 20px white;
+}
+.noteInfo--link {
+  color: rgb(0, 93, 214);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 0.5rem
+}
+
 
 /* DEVELOP */
 .devSection {
