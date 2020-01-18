@@ -149,6 +149,7 @@ html {
   }
   .stdMenu{
     flex-direction: column;
+    align-items: baseline;
     padding: 2rem;
   }
   .stdMenu__item {
