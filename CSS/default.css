@@ -225,6 +225,9 @@ html {
 }
 /* PAGE TITLE レスポンシブ */
 @media screen and (max-width:700px) {
+  .pageTitle, .pageTitle--profile, .pageTitle--notes, .pageTitle--portfolio, .pageTitle--news, .pageTitle--contact {
+    height: 22rem;
+  }
   .pageTitleLetters {
     text-align: center;
   }
@@ -243,7 +246,7 @@ html {
 }
 
 /* STANDARD HEADING */
-.stdHeading, .stdHeading--light, .stdHeading--record {
+.stdHeading, .stdHeading--light, .stdHeading--record, .stdHeading--study {
   font-size: 2rem;
   border-left: solid 10px rgb(155, 155, 155);
   padding-left: 1rem;
@@ -260,6 +263,9 @@ html {
 }
 .stdHeading--record {
   border-left: solid 10px rgb(0, 102, 218);
+}
+.stdHeading--study {
+  border-left: solid 10px orange;
 }
 
 /* STANDARD LIST */
@@ -377,6 +383,7 @@ html {
 .noteGenre__noteContainer {
   display: flex;
   justify-content: center;
+  margin-bottom: 5rem;
 }
 .noteBox, .noteBox--record {
   margin-top: 2rem;
@@ -392,7 +399,7 @@ html {
 .noteBox--record--hover:hover > .noteBox__contents {
   background-color: rgb(207, 207, 207);
 }
-.noteBox__heading, .noteBox__heading--record {
+.noteBox__heading, .noteBox__heading--record, .noteBox__heading--study {
   background-color: rgb(44, 44, 44);
   color: white;
   padding-top:0.7rem;
@@ -403,6 +410,10 @@ html {
 }
 .noteBox__heading--record {
   background-color: rgb(0, 70, 150);
+}
+.noteBox__heading--study {
+  background-color: rgb(221, 144, 2);
+  color: black;
 }
 .noteBox__contents {
   background-color: rgb(163, 163, 163);
