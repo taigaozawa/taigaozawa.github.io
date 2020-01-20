@@ -131,7 +131,7 @@ html {
     overflow: auto;
     position: absolute;
     top: 5rem;
-    left: 0;
+    right: 0;
     z-index: 999;/*最前面に*/
     width: 100%;/*右側に隙間を作る（閉じるカバーを表示）*/
     height: 50%;
