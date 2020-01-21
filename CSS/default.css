@@ -79,7 +79,7 @@ html {
 ***/
 @media screen and (max-width:700px) {
 
-.defaultHeader{
+  .defaultHeader{
   padding-top: 1rem;
   padding-bottom: 1rem;
   }
@@ -137,7 +137,6 @@ html {
     width: 100%;/*右側に隙間を作る（閉じるカバーを表示）*/
     background: rgba(0, 0, 0, 0.904);/*背景色*/
     display: none;
-}
   }
   
   /*チェックが入ったらもろもろ表示*/
