@@ -139,6 +139,7 @@ html {
     transition: .3s ease-in-out;/*滑らかに表示*/
     -webkit-transform: translateX(105%);
     transform: translateX(105%);/*左に隠しておく*/
+    display: none;
   }
   
   /*チェックが入ったらもろもろ表示*/
@@ -150,6 +151,7 @@ html {
     -webkit-transform: translateX(0%);
     transform: translateX(0%);/*中身を表示（右へスライド）*/
     box-shadow: 6px 0 25px rgba(0, 0, 0, 0);
+    display: block;
   }
   .stdMenu{
     flex-direction: column;
