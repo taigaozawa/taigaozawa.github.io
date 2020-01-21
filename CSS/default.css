@@ -124,7 +124,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(206, 206, 206, 0);
+    background-color: rgba(223, 13, 13, 0);
   }
   
   /*中身*/
@@ -141,8 +141,7 @@ html {
   }
   
   /*チェックが入ったらもろもろ表示*/
-  #nav-input:checked ~ #nav-close {
-    visibility: visible;/*カバーを表示*/
+  #nav-input:checked ~ #nav-close {/*カバーを表示*/
     display: block;
   }
   #nav-input:checked ~ #nav-content {
