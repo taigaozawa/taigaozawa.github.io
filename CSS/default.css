@@ -22,6 +22,11 @@ html {
   max-width: 1200px;
   margin: auto;
 }
+.footerInner {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-size: 1.5rem;
+}
 
 /* DEFAULT HEADER */
 .defaultHeader {
@@ -186,11 +191,7 @@ html {
 .defaultFooter {
   background-color: rgba(0, 0, 0, 0.274);
 }
-.footerInner {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  font-size: 1.5rem;
-}
+
 
 
 /*** コンポーネント ***/
