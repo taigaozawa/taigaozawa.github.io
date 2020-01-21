@@ -10,6 +10,9 @@
 img {
   display:block; /* 画像の下の不自然な余白除去 */
 }
+.noWrap {
+  display: inline-block;
+}
 
 /********** レイアウト設定 ************************************************/
 
@@ -93,8 +96,8 @@ img {
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
-  padding-bottom: 0.5rem;
-  line-height: 4rem;
+  padding-bottom: 1rem;
+  line-height: 3.5rem;
 }
 .introEng {
   margin-top: 1rem;
@@ -105,21 +108,24 @@ img {
 .introJpn__name {
   font-weight: bold;
   font-size: 3rem;
+  margin-right: 6rem;
 }
 .introEng__name {
   font-weight: bold;
   font-size: 2.5rem;
+  margin-right: 3rem;
 }
 .introJpn__posi {
   font-size: 2rem;
-  margin-left: 6rem;
   font-weight: bold;
 }
 .introEng__posi {
   font-size: 1.7rem;
-  margin-left: 3rem;
   font-weight: bold;
-  line-height: 3rem;
+  line-height: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
 }
 .introButtonContainer{
   display: flex;
@@ -155,15 +161,32 @@ img {
   }
   .introJpn {
     justify-content: center;
+    padding-bottom: 1rem;
+    flex-direction: column;
+    align-items: center;
   }
   .introEng {
     justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .introJpn__name {
+    font-size: 2.8rem;
+    margin-right: 0;
+    line-height: 3rem;
+    padding-bottom: 0.5rem;
+  }
+  .introEng__name {
+    margin-right: 0rem;
   }
   .introEng__posi {
-    margin-left: 2rem;
+    margin-top: 0.3rem;
+    justify-content: center;
   }
   .introJpn__posi {
-    margin-left: 2rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
   }
   .introButtonContainer {
     flex-direction: column;
