@@ -11,8 +11,14 @@ html {
 .stdLink {
   color: rgb(0, 93, 214);
 }
+.stdLink:hover > .stdLink--hover {
+  border-bottom: solid 1px rgb(0, 80, 185);
+}
 .spaceBox {
   height: 2rem;
+}
+.bigSpaceBox {
+  height: 5rem;
 }
 
 /*** レイアウト ***/
