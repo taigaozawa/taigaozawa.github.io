@@ -145,7 +145,6 @@ html {
   /*チェックが入ったらもろもろ表示*/
   #nav-input:checked ~ #nav-close {
     display: block;/*カバーを表示*/
-    opacity: 0;
   }
   #nav-input:checked ~ #nav-content {
     -webkit-transform: translateX(0%);
