@@ -140,14 +140,17 @@ html {
     width: 100%;/*右側に隙間を作る（閉じるカバーを表示）*/
     background: rgba(0, 0, 0, 0.904);/*背景色*/
     display: none;
+}
   }
   
   /*チェックが入ったらもろもろ表示*/
   #nav-input:checked ~ #nav-close {
     display: block;/*カバーを表示*/
+    transition: 0.4s;
   }
   #nav-input:checked ~ #nav-content {
     display: block;
+    transition: 0.4s;
   }
   .stdMenu{
     flex-direction: column;
