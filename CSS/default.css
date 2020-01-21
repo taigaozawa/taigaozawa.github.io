@@ -138,9 +138,6 @@ html {
     z-index: 999;/*最前面に*/
     width: 100%;/*右側に隙間を作る（閉じるカバーを表示）*/
     background: rgba(0, 0, 0, 0.904);/*背景色*/
-    transition: .3s ease-in-out;/*滑らかに表示*/
-    -webkit-transform: translateX(105%);
-    transform: translateX(105%);/*左に隠しておく*/
     display: none;
   }
   
@@ -149,8 +146,6 @@ html {
     display: block;/*カバーを表示*/
   }
   #nav-input:checked ~ #nav-content {
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%);/*中身を表示（右へスライド）*/
     display: block;
   }
   .stdMenu{
