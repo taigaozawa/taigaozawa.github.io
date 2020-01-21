@@ -96,14 +96,27 @@
 
     <div class="mainInner">
 
+      <div class="spaceBox"></div>
+      <div class="spaceBox"></div>
+
       <div class="allCategories">
         カテゴリ一覧：
         <span class="allCategories__category"><a href="#record" class="stdLink">記録ノート</a></span>
         <span class="allCategories__category"><a href="#study" class="stdLink">研究・学習ノート</a></span>
-        <span class="allCategories__category"><a href="#eText" class="stdLink">e テキスト</a></span>
+        <span class="allCategories__category"><a href="#eTexts" class="stdLink">eテキスト</a></span>
         <span class="allCategories__category"><a href="#travel" class="stdLink">旅行記</a></span>
         <span class="allCategories__category"><a href="#otherNotes" class="stdLink">雑記</a></span>
       </div>
+      <div class="allCategories">
+        All Categories：
+        <span class="allCategories__category"><a href="#record" class="stdLink">Record Notes</a></span>
+        <span class="allCategories__category"><a href="#study" class="stdLink">Study Notes</a></span>
+        <span class="allCategories__category"><a href="#eTexts" class="stdLink">eTexts</a></span>
+        <span class="allCategories__category"><a href="#travel" class="stdLink">Travelogues</a></span>
+        <span class="allCategories__category"><a href="#otherNotes" class="stdLink">Others</a></span>
+      </div>
+
+      <div class="spaceBox"></div>
 
       <div class="noteGenre" id="record">
         <h2 class="stdHeading--record">記録ノート Record Notes </h2>
@@ -128,8 +141,8 @@
         <h2 class="stdHeading--study">研究・学習ノート Study Notes </h2>
 
         <div class="noteGenre__noteContainer">
-          <div class="noteBox--record">
-            <a href="./study_rec/index.html" class="noteBox--record--hover">
+          <div class="noteBox">
+            <a href="./study_rec/index.html" class="noteBox--hover">
             <h3 class="noteBox__heading--study">物理学ノート Physics Notebooks&nbsp; <i class="fa fa-chevron-right"></i></h3>
             <div class="noteBox__contents">
               <div class="noteInfo"><strong>物理学のオリジナルノートです。</strong></div>
@@ -139,9 +152,74 @@
           </a>
           </div>
 
+            <div class="noteBox">
+              <a href="./study_rec/index.html" class="noteBox--hover">
+              <h3 class="noteBox__heading--study">数学ノート Mathematics Notebooks&nbsp; <i class="fa fa-chevron-right"></i></h3>
+              <div class="noteBox__contents">
+                <div class="noteInfo"><strong>数学のオリジナルノートです。</strong></div>
+                <div class="noteInfo">This is a list of original notebooks on mathematics.</div>
+                <div class="noteInfo--link">詳しく See more <i class="fa fa-chevron-right"></i></div>
+              </div>
+            </a>
+            </div>
+
         </div>
       </div>
 
+      <div class="noteGenre" id="eTexts">
+        <h2 class="stdHeading--eTexts">eテキスト &nbsp;eTexts </h2>
+
+        <div class="noteGenre__noteContainer">
+          <div class="noteBox">
+            <a href="./study_rec/index.html" class="noteBox--hover">
+            <h3 class="noteBox__heading--eTexts">高校物理 High-School Physics&nbsp; <i class="fa fa-chevron-right"></i></h3>
+            <div class="noteBox__contents">
+              <div class="noteInfo"><strong>高校物理の e テキストです。</strong></div>
+              <div class="noteInfo">This is a list of eTexts on physics at high school.</div>
+              <div class="noteInfo--link">詳しく See more <i class="fa fa-chevron-right"></i></div>
+            </div>
+          </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="noteGenre" id="travel">
+        <h2 class="stdHeading--travel">旅行記 &nbsp;Travelogues </h2>
+
+        <div class="noteGenre__noteContainer">
+          <div class="noteBox">
+            <a href="./study_rec/index.html" class="noteBox--hover">
+            <h3 class="noteBox__heading--travel">カナダ・バンクーバー Vancouver, Canada&nbsp; <i class="fa fa-chevron-right"></i></h3>
+            <div class="noteBox__contents">
+              <div class="noteInfo"><strong>カナダ・バンクーバーの旅行記です。</strong></div>
+              <div class="noteInfo">This is a travelogue on Vancouver, Canada.</div>
+              <div class="noteInfo--link">詳しく See more <i class="fa fa-chevron-right"></i></div>
+            </div>
+          </a>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="noteGenre" id="others">
+        <h2 class="stdHeading">雑記 &nbsp;Others </h2>
+
+        <div class="noteGenre__noteContainer">
+          <div class="noteBox">
+            <a href="./study_rec/index.html" class="noteBox--hover">
+            <h3 class="noteBox__heading">編集記 Editors Notes&nbsp; <i class="fa fa-chevron-right"></i></h3>
+            <div class="noteBox__contents">
+              <div class="noteInfo"><strong>編集記です。</strong></div>
+              <div class="noteInfo">This is a list of editor's notes.</div>
+              <div class="noteInfo--link">詳しく See more <i class="fa fa-chevron-right"></i></div>
+            </div>
+          </a>
+          </div>
+
+        </div>
+      </div>
 
       
 
