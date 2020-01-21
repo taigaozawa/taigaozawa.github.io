@@ -124,6 +124,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
+    background-color: white;
     opacity: 0;
   }
   
@@ -149,7 +150,6 @@ html {
   #nav-input:checked ~ #nav-content {
     -webkit-transform: translateX(0%);
     transform: translateX(0%);/*中身を表示（右へスライド）*/
-    box-shadow: 6px 0 25px rgba(0, 0, 0, 0);
     display: block;
   }
   .stdMenu{
@@ -227,7 +227,7 @@ html {
 /* PAGE TITLE レスポンシブ */
 @media screen and (max-width:700px) {
   .pageTitle, .pageTitle--profile, .pageTitle--notes, .pageTitle--portfolio, .pageTitle--news, .pageTitle--contact {
-    height: 22rem;
+    height: 23rem;
   }
   .pageTitleLetters {
     text-align: center;
