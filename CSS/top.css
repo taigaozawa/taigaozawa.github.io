@@ -135,32 +135,7 @@ img {
   margin-right: 1rem;
   margin-bottom: 1rem;
 }
-.stdButton, .stdButton--gray {
-  background-color: rgb(0, 99, 180) ;
-  padding: 0.8rem 1.5rem 0.8rem 2rem;
-  border-radius: 50px;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  color: white;
-  display:flex;
-  align-items: center;
-}
-.stdButton--gray {
-  background-color: rgb(54, 54, 54) ;
-}
-.buttonLetters__jpn {
-  font-weight: bold;
-}
-.stdButton:hover {
-  background-color: rgb(35, 139, 224) ;
-}
-.stdButton--gray:hover {
-  background-color: rgb(97, 97, 97) ;
-}
-.buttonArrows {
-  font-size: 2rem;
-  margin-left: 1rem;
-}
+
 @media screen and (max-width:700px) {
   .introContainer {
     justify-content: center;
@@ -193,14 +168,13 @@ img {
   .introJpn__posi {
     line-height: 2rem;
     font-size: 1.5rem;
+    text-align: center;
   }
   .introButtonContainer {
     flex-direction: column;
     align-items: center;
   }
 }
-
-
 
 
 .wide {
