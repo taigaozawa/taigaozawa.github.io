@@ -72,14 +72,14 @@
     padding-bottom: 0.5rem;
   }
   .profileCategory {
-    line-height: 2rem;
+    line-height: 2.2rem;
   }
   .profileCategory__title, .profileCategory__year {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-right: 1.5rem;
   }
   .profileCategory__contents {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
   }
 }
 @media screen and (max-width:400px) {
@@ -88,5 +88,11 @@
   }
   .profileCategory__contents {
     flex-basis: 75%;
+  }
+  .profileCategory__title, .profileCategory__year {
+    font-size: 1.2rem;
+  }
+  .profileCategory__contents {
+    font-size: 1.5rem;
   }
 }
