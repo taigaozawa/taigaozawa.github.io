@@ -187,6 +187,12 @@
 .githubAnchor .fa-github-square {
   font-size: 10rem;
 }
+.githubAnchor:hover > .fa-github-square {
+  color: rgb(78, 78, 78);
+}
+.githubAnchor:hover > .githubCaptionInfo {
+  color: rgba(0, 110, 255, 0.74);
+}
 .githubCaption {
   font-size: 2rem;
   font-weight: bold;
