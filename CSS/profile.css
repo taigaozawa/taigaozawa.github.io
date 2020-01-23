@@ -61,8 +61,8 @@
 
 @media screen and (max-width:700px) {
   .profileInfo {
-    padding-top: 3rem;
-    padding-bottom: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
   }
   .profileHeading {
     font-size: 2rem;
@@ -83,7 +83,14 @@
   }
 }
 @media screen and (max-width:400px) {
-  .profileCategory__title, .profileCategory__year {
+  .profileInfo {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+  .profileCategory__title{
+    flex-basis: 30%;
+  }
+  .profileCategory__year {
     flex-basis: 25%;
   }
   .profileCategory__contents {
