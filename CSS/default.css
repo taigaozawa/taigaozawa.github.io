@@ -21,6 +21,10 @@ html {
   height: 5rem;
 }
 
+img {
+  display:block; /* 画像の下の不自然な余白除去 */
+}
+
 /*** レイアウト ***/
 /* INNER */
 .headerInner, .mainInner, .footerInner {
@@ -336,9 +340,22 @@ html {
 .wide {
   position: relative;
 }
-.wide__image {
+.wide__image, .wide__image--s, .wide__image--l {
   width: 100%;
 }
+.wide__image--l {
+  display:none;
+}
+@media screen and (max-width:550px) {
+  .wide__image--s {
+    display: none;
+  }
+  .wide__image--l {
+    display: block;
+  }
+}
+
+
 .wide__message{
   margin:auto;
   width: 95%;
