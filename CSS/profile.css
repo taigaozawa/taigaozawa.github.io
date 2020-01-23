@@ -34,14 +34,14 @@
   color: rgb(68, 68, 68);
   text-align: right;
   margin-right: 3rem;
-  flex-basis: 20%;
+  flex-basis: 25%;
 }
 .profileCategory__year {
   color: rgb(197, 197, 197);
 }
 .profileCategory__contents {
   font-size: 2rem;
-  flex-basis: 80%;
+  flex-basis: 75%;
   display:flex;
   flex-wrap: wrap;
 }
@@ -89,12 +89,6 @@
   }
   .profileCategory__title{
     flex-basis: 30%;
-  }
-  .profileCategory__year {
-    flex-basis: 25%;
-  }
-  .profileCategory__contents {
-    flex-basis: 75%;
   }
   .profileCategory__title, .profileCategory__year {
     font-size: 1.2rem;
