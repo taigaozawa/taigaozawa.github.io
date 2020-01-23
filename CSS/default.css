@@ -547,6 +547,7 @@ img {
   padding-right: 5rem;
   font-size: 1.7rem;
   border-radius: 20px 0 0 0;
+  border-right: solid 5px gray;
 }
 .noteBox__heading--record {
   background-color: rgb(0, 70, 150);
@@ -571,7 +572,7 @@ img {
   padding-left:2.5rem;
   padding-right: 2rem;
   border-radius: 0 0 0 20px;
-  border-right: dotted 20px white;
+  border-right: solid 5px gray;
 }
 .noteInfo--link {
   color: rgb(0, 93, 214);
@@ -583,6 +584,10 @@ img {
 @media screen and (max-width:700px) {
   .noteGenre__noteContainer {
     flex-direction: column;
+  }
+  .noteBox__contents {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
   }
 }
 
