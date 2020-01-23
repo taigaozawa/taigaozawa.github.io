@@ -20,6 +20,9 @@ html {
 .bigSpaceBox {
   height: 5rem;
 }
+.noWrap {
+  display: inline-block;
+}
 
 img {
   display:block; /* 画像の下の不自然な余白除去 */
@@ -40,7 +43,7 @@ img {
 
 /* DEFAULT HEADER */
 .defaultHeader {
-  background-color: rgba(0, 0, 0, 0.973);
+  background-color: rgba(0, 0, 0, 0.966);
   color: white;
   padding-top: 2.4rem;
 }
@@ -69,7 +72,7 @@ img {
 .itemAnchor {
   margin-left: 1rem;
   margin-bottom: 1.5rem;
-  border-bottom: solid 2px rgba(0, 0, 0, 0.973);
+  border-bottom: solid 2px rgba(0, 0, 0, 0);
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
@@ -346,14 +349,6 @@ img {
 .wide__image--l {
   display:none;
 }
-@media screen and (max-width:550px) {
-  .wide__image--s {
-    display: none;
-  }
-  .wide__image--l {
-    display: block;
-  }
-}
 
 
 .wide__message{
@@ -372,7 +367,7 @@ img {
   text-align: left;
   display: flex;
   align-items: baseline;
-  background-color: rgba(0, 0, 0, 0.678);
+  background-color: rgba(0, 0, 0, 0.548);
   padding: 3rem;
 }
 .wideMessageBox__jpn {
@@ -401,6 +396,14 @@ img {
     font-size: 1.8rem;
     margin-left: 1rem;
     letter-spacing: 0.5px;
+  }
+}
+@media screen and (max-width:550px) {
+  .wide__image--s {
+    display: none;
+  }
+  .wide__image--l {
+    display: block;
   }
 }
 
