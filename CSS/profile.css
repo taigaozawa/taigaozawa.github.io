@@ -124,19 +124,23 @@
   font-size: 5rem;
   text-align: center;
   width: 10rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
 }
 .skillLogoImg {
   width: 5rem;
+  height: auto;
   padding: 0.1rem 0 0.1rem 0;
 }
 .skillLogoImg--cpp {
   width: 4.1rem;
+  height: auto;
   padding: 0.2rem 0 0.2rem 0;
 }
 .skillLogoImg--jQuery {
   width: 7rem;
+  height: auto;
   padding: 1.8rem 0 1.5rem 0;
 }
 
