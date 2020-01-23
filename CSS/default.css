@@ -248,7 +248,7 @@ img {
 }
 
 /* PAGE TITLE */
-.pageTitle, .pageTitle--profile, .pageTitle--notes, .pageTitle--portfolio, .pageTitle--news, .pageTitle--contact {
+.pageTitle, .pageTitle--profile, .pageTitle--notes,.pageTitle--news, .pageTitle--contact {
   background-color: gray;
   width: 100%;
   position: relative;
@@ -260,7 +260,6 @@ img {
   color: white;
 }
 .pageTitleLetters {
-  
   width: 95%;
   max-width: 1200px;
   margin: auto;
@@ -289,6 +288,7 @@ img {
 @media screen and (max-width:700px) {
   .pageTitleLetters {
     text-align: center;
+    top: 45%;
   }
   .pageTitleHeading__jpn {
     font-size: 2.5rem;
@@ -427,6 +427,16 @@ img {
 .allCategories__category:hover {
   border-bottom: solid 1px rgb(0, 105, 224);
 }
+@media screen and (max-width:700px) {
+  .allCategories{ 
+    font-size: 1.2rem;
+  }
+  .allCategories__category {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    line-height: 1.5rem;
+  }
+}
 .category {
   margin-top: 2rem;
   margin-bottom: 5rem;
@@ -532,7 +542,7 @@ img {
   margin-right: 1rem
 }
 .noteBox--record {
-  width: 95%;
+  width: 98%;
 }
 .noteBox--hover:hover > .noteBox__contents {
   background-color: rgb(224, 224, 224);
@@ -551,6 +561,20 @@ img {
   border-radius: 20px 0 0 0;
   border-right: solid 5px gray;
 }
+@media screen and (max-width:700px) {
+  .noteBox__heading, .noteBox__heading--record, .noteBox__heading--study, .noteBox__heading--eTexts, .noteBox__heading--travel {
+    border-radius: 15px 0 0 0;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+  }
+  .noteGenre__noteContainer {
+    margin-right: 0;
+  }
+  .noteBox, .noteBox--record {
+  margin-right: 0;
+  }
+}
+
 .noteBox__heading--record {
   background-color: rgb(0, 70, 150);
 }
@@ -590,6 +614,7 @@ img {
   .noteBox__contents {
     font-size: 1.6rem;
     line-height: 2.2rem;
+    padding: 1.5rem;
   }
 }
 
