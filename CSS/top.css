@@ -120,6 +120,7 @@ img {
   display: flex;
   -ms-flex-wrap : wrap; 
   flex-wrap: wrap;
+  max-width: 100%;
 }
 .introEng__posi {
   font-size: 1.7rem;
@@ -130,6 +131,7 @@ img {
   -ms-flex-wrap : wrap; 
   flex-wrap: wrap;
   margin-top: 0.5rem;
+  max-width: 100%;
 }
 .introButtonContainer{
   display: flex;
@@ -173,6 +175,7 @@ img {
     line-height: 2rem;
     font-size: 1.5rem;
     text-align: center;
+    justify-content: center;
   }
   .introButtonContainer {
     flex-direction: column;
