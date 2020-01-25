@@ -101,6 +101,7 @@ img {
   align-items: baseline;
   padding-bottom: 1rem;
   line-height: 3.5rem;
+  -ms-flex:0 1 auto
 }
 .introEng {
   margin-top: 1rem;
@@ -109,6 +110,7 @@ img {
   -ms-flex-wrap : wrap; 
   flex-wrap: wrap;
   align-items: baseline;
+  -ms-flex:0 1 auto
 }
 .introJpn__name {
   font-weight: bold;
@@ -127,7 +129,7 @@ img {
   display: flex;
   -ms-flex-wrap : wrap; 
   flex-wrap: wrap;
-  max-width: 100%;
+  -ms-flex:0 1 auto
 }
 .introEng__posi {
   font-size: 1.7rem;
@@ -138,7 +140,7 @@ img {
   -ms-flex-wrap : wrap; 
   flex-wrap: wrap;
   margin-top: 0.5rem;
-  max-width: 100%;
+  -ms-flex:0 1 auto
 }
 .introButtonContainer{
   display : -ms-flexbox; /*for IE10*/
