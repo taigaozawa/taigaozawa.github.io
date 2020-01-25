@@ -268,13 +268,17 @@ img {
 }
 
 /* PAGE TITLE */
-.pageTitle--notes, .pageTitle--portfolio, .pageTitle--news, .pageTitle--contact {
+.pageTitle--notes, .pageTitle--noDiscription {
   width: 100%;
   position: relative;
   background: linear-gradient(to right, rgb(2, 32, 92),rgba(3, 40, 114, 0.705) 70%, rgba(3, 40, 114, 0.26));
   padding-top: 15rem;
   padding-bottom: 15rem;
   color: white;
+}
+.pageTitle--noDiscription {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
 }
 .pageTitleLetters {
   width: 95%;
@@ -302,8 +306,9 @@ img {
   width: 95%;
 }
 /* PAGE TITLE レスポンシブ */
-@media screen and (max-width:700px) {
-  .pageTitle--notes, .pageTitle--portfolio, .pageTitle--news, .pageTitle--contact {
+
+@media screen and (max-width:710px) {
+  .pageTitle--notes, .pageTitle--noDiscription {
     background-color: rgb(23, 50, 104);
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -336,7 +341,7 @@ img {
 }
 
 /* STANDARD HEADING */
-.stdHeading, .stdHeading--light, .stdHeading--record, .stdHeading--study, .stdHeading--eTexts, .stdHeading--travel {
+.stdHeading, .stdHeading--light, .stdHeading--record, .stdHeading--study, .stdHeading--eTexts, .stdHeading--travel , .stdHeading--orange{
   font-size: 2rem;
   border-left: solid 10px rgb(155, 155, 155);
   padding-left: 1rem;
@@ -361,6 +366,9 @@ img {
   border-left: solid 10px rgb(0, 219, 18);
 }
 .stdHeading--travel {
+  border-left: solid 10px orange;
+}
+.stdHeading--orange {
   border-left: solid 10px orange;
 }
 
@@ -808,4 +816,45 @@ img {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+}
+
+.contact__info {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+.contactInfo {
+  font-size: 1.9rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.contactInfo__heading {
+  font-weight: bold;
+  margin-right: 2rem;
+}
+.contactInfo__twitterIcon {
+  color: rgb(0, 110, 255);
+  margin-right: 0.5rem;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+.contactInfo__info {
+  line-height: 3.5rem;
+}
+.twitterButton {
+  padding: 0rem 1rem 0.2rem 0.5rem;
+  line-height: 3rem;
+  border-radius: 0.5rem;
+  background-color: rgb(0, 110, 255);
+  color: white;
+}
+.contactInfoTwitterLink {
+  display: flex;
+}
+.contactInfoTwitterLink:hover .twitterButton {
+  background-color: rgb(40, 133, 255);
+}
+.contactInfoTwitterLink:hover>.contactInfo__twitterIcon {
+  color: rgb(40, 133, 255);
 }
