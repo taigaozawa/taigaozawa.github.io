@@ -36,13 +36,14 @@
   color: rgb(68, 68, 68);
   text-align: right;
   margin-right: 3rem;
-  width: 25rem;
+  width: 10rem;
   flex-basis: 20%;
 }
 .profileCategory__title--light {
   color: rgb(197, 197, 197);
 }
 .profileCategory__contents {
+  width: 80%;
   font-size: 2rem;
   flex-basis: 80%;
   display:flex;
