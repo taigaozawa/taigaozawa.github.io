@@ -271,9 +271,9 @@ img {
 .pageTitle--notes, .pageTitle--portfolio, .pageTitle--news, .pageTitle--contact {
   width: 100%;
   position: relative;
-  background: linear-gradient(to right, rgb(3, 40, 114),rgba(3, 40, 114, 0.705) , rgba(3, 40, 114, 0.096));
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  background: linear-gradient(to right, rgb(2, 32, 92),rgba(3, 40, 114, 0.705) 70%, rgba(3, 40, 114, 0.26));
+  padding-top: 12rem;
+  padding-bottom: 12rem;
   color: white;
 }
 .pageTitleLetters {
@@ -289,12 +289,13 @@ img {
   transform: translate(-50%,-50%);
 }
 .pageTitleHeading__jpn {
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 .pageTitleHeading__eng {
   font-size: 2.5rem;
 }
 .pageTitleInfo {
+  margin-top: 0.5rem;
   font-size: 1.5rem;
   font-weight: normal;
 }
@@ -305,19 +306,26 @@ img {
 @media screen and (max-width:700px) {
   .pageTitle--notes, .pageTitle--portfolio, .pageTitle--news, .pageTitle--contact {
     background-color: rgb(23, 50, 104);
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
   .pageTitleLetters {
-    text-align: center;
     top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .pageTitleHeading__jpn {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
   .pageTitleHeading__eng {
-    font-size: 2.0rem;
+    font-size: 1.6rem;
   }
   .pageTitleInfo {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .pageTitleInfo {
+    margin-bottom: 1rem;
   }
 }
 
