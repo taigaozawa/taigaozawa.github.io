@@ -310,8 +310,8 @@ img {
 @media screen and (max-width:710px) {
   .pageTitle--notes, .pageTitle--noDiscription {
     background-color: rgb(23, 50, 104);
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
   .pageTitleLetters {
     top: 50%;
