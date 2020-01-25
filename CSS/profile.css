@@ -185,39 +185,3 @@
 .fa-github {
   color: black;
 }
-
-.profileInfo__github {
-  max-width: 100%;
-}
-.githubAccount {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.githubAccount__item {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 2rem;
-}
-.githubAnchor .fa-github-square {
-  font-size: 10rem;
-}
-.githubAnchor:hover > .fa-github-square {
-  color: rgb(78, 78, 78);
-}
-.githubAnchor:hover > .githubCaptionInfo {
-  color: rgba(0, 110, 255, 0.74);
-}
-.githubCaption {
-  font-size: 2rem;
-  font-weight: bold;
-}
-.githubCaptionInfo {
-  font-size: 2rem;
-  font-weight: bold;
-  color: rgb(0, 110, 255);
-}

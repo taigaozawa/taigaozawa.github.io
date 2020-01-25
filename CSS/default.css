@@ -644,6 +644,58 @@ img {
   }
 }
 
+/* GIT HUB LINKS */
+.githubLink {
+  margin-top : 3rem;
+}
+.githubLink__heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-bottom: solid 2px orange;
+  border-left: solid 1rem orange;
+  padding-left: 1rem;
+}
+.githubLink__github {
+  max-width: 100%;
+}
+.githubAccount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.githubAccount__item {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2rem;
+}
+.githubAnchor .fa-github-square {
+  font-size: 10rem;
+}
+.githubAnchor:hover > .fa-github-square {
+  color: rgb(78, 78, 78);
+}
+.githubAnchor:hover > .githubCaptionInfo {
+  color: rgba(0, 110, 255, 0.74);
+}
+.githubCaption {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.githubCaptionInfo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(0, 110, 255);
+}
+
+.portfolioButtonContainer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
 
 /* DEVELOP */
 .devSection {
@@ -655,4 +707,38 @@ img {
   margin-left: 2rem;
   font-size: 1.5rem;
   line-height: 2.5rem;
+}
+
+/* WORK IN PROGRESS */
+.workInProgress {
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+.progressHeading {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.progressHeading__eng {
+  font-style: italic;
+  font-size: 2.5rem;
+}
+.progressInfo {
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+.logo404 {
+  font-size: 10rem;
+  color: rgb(255, 166, 0);
+}
+
+@media screen and (max-width:470px) {
+  .progressHeading {
+    font-size: 2.5rem;
+  }
+  .progressHeading {
+    font-size: 2.2rem;
+  }
+  .progressInfo {
+    font-size: 1.7rem;
+  }
 }

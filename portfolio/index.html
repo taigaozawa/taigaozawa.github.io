@@ -1,93 +1,185 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/CSS/ress.css">
-    <link rel="stylesheet" href="/CSS/default.css">
-    <title>開発 Develop - TaigaOzawa</title>
-  </head>
-  
-  <body>
-    <header class="defaultHeader">
 
-      <div class="headerInner">
-  
-        <div class="headerInner__logo">
-          <a href="../index.html">
-            <span class="headerInner__logo">小澤泰河</span>
-            <span class="headerInner__logo--eng">TaigaOzawa</span>
-          </a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../CSS/ress.css">
+  <link rel="stylesheet" href="../CSS/default.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <title>TEMPLATE - TaigaOzawa</title>
+</head>
+
+<body>
+  <header class="defaultHeader">
+
+    <div class="headerInner">
+
+      <div class="headerInner__logo">
+        <a href="../index.html">
+          <span class="headerInner__logo">小澤泰河</span>
+          <span class="headerInner__logo--eng">TaigaOzawa</span>
+        </a>
+      </div>
+
+      <div class="headerInner__menu">
+        <input id="nav-input" type="checkbox" class="nav-unshown">
+        <label id="nav-open" for="nav-input"><span></span></label>
+        <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+        <div id="nav-content">
+          <ul class="stdMenu">
+            <a class="itemAnchor" href="/index.html">
+              <li class="menuItem">
+
+                <div class="menuItem__name">ホーム</div>
+                <div class="menuItem__name--eng">Home</div>
+
+              </li>
+            </a>
+            <a class="itemAnchor" href="/profile/index.html">
+              <li class="menuItem">
+
+                <div class="menuItem__name">プロフィール</div>
+                <div class="menuItem__name--eng">Profile</div>
+
+              </li>
+            </a>
+            <a class="itemAnchor" href="/notes/index.html">
+              <li class="menuItem">
+
+                <div class="menuItem__name">ノート</div>
+                <div class="menuItem__name--eng">Notes</div>
+
+              </li>
+            </a>
+            <a class="itemAnchor" href="/portfolio/index.html">
+              <li class="menuItem">
+
+                <div class="menuItem__name">ポートフォリオ</div>
+                <div class="menuItem__name--eng">Portfolio</div>
+
+              </li>
+            </a>
+            <a class="itemAnchor" href="/news/index.html">
+              <li class="menuItem">
+
+                <div class="menuItem__name">お知らせ</div>
+                <div class="menuItem__name--eng">News</div>
+
+              </li>
+            </a>
+            <a class="itemAnchor" href="/contact/index.html">
+              <li class="menuItem">
+
+                <div class="menuItem__name">お問合せ</div>
+                <div class="menuItem__name--eng">Contact</div>
+
+              </li>
+            </a>
+          </ul>
         </div>
-  
-        <div class="headerInner__menu">
-          <input id="nav-input" type="checkbox" class="nav-unshown">
-          <label id="nav-open" for="nav-input"><span></span></label>
-          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
-          <div id="nav-content">
-            <ul class="stdMenu">
-              <a class="itemAnchor" href="/index.html">
-                <li class="menuItem">
-  
-                  <div class="menuItem__name">ホーム</div>
-                  <div class="menuItem__name--eng">Home</div>
-  
-                </li>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="pageTitle--notes">
+      <div class="pageTitleLetters">
+        <h1 class="pageTitleHeading">
+          <span class="pageTitleHeading__jpn">
+            ポートフォリオ
+          </span>
+          <span class="pageTitleHeading__eng">
+            Portfolio
+          </span>
+        </h1>
+        <p class="pageTitleInfo">
+          <div class="pageTitleInfo">制作物の一覧です</div>
+          <div class="pageTitleInfo">This is a list of my works.</div>
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="mainInner">
+
+      <div class="workInProgress">
+        <div class="progressHeading">
+          <div class="progressHeading__jpn">準備中</div>
+          <div class="progressHeading__eng">Work in Progress</div>
+        </div>
+      </div>
+
+
+      <div class="githubLink">
+        <div class="githubLink__heading">GitHub</div>
+        <div class="githubLink__github">
+          <div class="githubAccount">
+            <div class="githubAccount__item">
+              <a href="https://github.com/taigaozawa" class="githubAnchor">
+                <i class="fab fa-github-square"></i>
+                <div class="githubCaptionInfo">
+                  taigaozawa&nbsp;<i class="fa fa-chevron-right"></i>
+                </div>
+                <div class="githubCaption">
+                  基本アカウント
+                </div>
+                <div class="githubCaption">
+                  Basic Account
+                </div>
               </a>
-              <a class="itemAnchor" href="/profile/index.html">
-                <li class="menuItem">
-  
-                  <div class="menuItem__name">プロフィール</div>
-                  <div class="menuItem__name--eng">Profile</div>
-  
-                </li>
+            </div>
+
+            <div class="githubAccount__item">
+              <a href="https://github.com/taigaprog" class="githubAnchor">
+                <i class="fab fa-github-square"></i>
+                <div class="githubCaptionInfo">
+                  taigaprog&nbsp;<i class="fa fa-chevron-right"></i>
+                </div>
+                <div class="githubCaption">
+                  学習用アカウント
+                </div>
+                <div class="githubCaption">
+                  Study Account
+                </div>
               </a>
-              <a class="itemAnchor" href="/notes/index.html">
-                <li class="menuItem">
-  
-                  <div class="menuItem__name">ノート</div>
-                  <div class="menuItem__name--eng">Notes</div>
-  
-                </li>
-              </a>
-              <a class="itemAnchor" href="/portfolio/index.html">
-                <li class="menuItem">
-  
-                  <div class="menuItem__name">ポートフォリオ</div>
-                  <div class="menuItem__name--eng">Portfolio</div>
-  
-                </li>
-              </a>
-              <a class="itemAnchor" href="/news/index.html">
-                <li class="menuItem">
-  
-                  <div class="menuItem__name">お知らせ</div>
-                  <div class="menuItem__name--eng">News</div>
-  
-                </li>
-              </a>
-              <a class="itemAnchor" href="/contact/index.html">
-                <li class="menuItem">
-  
-                  <div class="menuItem__name">お問合せ</div>
-                  <div class="menuItem__name--eng">Contact</div>
-  
-                </li>
-              </a>
-            </ul>
+            </div>
+
           </div>
         </div>
       </div>
-    </header>
 
-  <main>
-    <h1>ポートフォリオ Portfolio</h1>
-    <p><a href="https://github.com/taigaozawa">GitHub を見る ></a></p>
-    <p><a href="/index.html">トップページに戻る ></a></p>
+      <div class="portfolioButtonContainer">
+        <div class="portfolioButtonContainer__stdButton">
+          <a href="profile/index.html">
+            <div class="stdButton">
+              <div class="buttonLetters">
+                <div class="buttonLetters__jpn">プロフィール</div>
+                <div class="buttonLetters__eng">Profile</div>
+              </div>
+              <div class="buttonArrows">
+                <i class="fa fa-chevron-right"></i></div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="bigSpaceBox"></div>
+      <p class="returnToTop"><a class="stdLink" href="/index.html">トップページに戻る <i class="fa fa-chevron-right"></i></a>
+      </p>
+    </div>
+    <div class="spaceBox"></div>
+
   </main>
-  
-  <footer></footer>
 
+  <footer class="defaultFooter">
+    <div class="footerInner">
+      <p>Copyright © 2020 Taiga Ozawa. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
+
 </html>
