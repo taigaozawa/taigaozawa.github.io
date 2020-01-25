@@ -58,6 +58,11 @@ img {
   color: orange;
   font-size: 2rem;
 }
+@media all and (-ms-high-contrast: none){
+  .headerInner__logo {
+    margin-top: 0.5rem;
+  }
+}
 .headerInner__logo--eng {
   font-weight: bold;
   color: white;
@@ -154,7 +159,7 @@ img {
   #nav-content {
     overflow: auto;
     position: absolute;
-    top: 5rem;
+    top: 4.9rem;
     right: 0;
     z-index: 999;/*最前面に*/
     width: 100%;/*右側に隙間を作る（閉じるカバーを表示）*/
