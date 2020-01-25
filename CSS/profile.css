@@ -88,6 +88,7 @@
   .profileCategory__contents {
     font-size: 1.7rem;
     flex-basis: 80%;
+    min-width: 300px;
   }
 }
 @media screen and (max-width:470px) {
@@ -104,6 +105,7 @@
   .profileCategory__contents {
     font-size: 1.5rem;
     flex-basis: 75%;
+    min-width: 0;
   }
 }
 
