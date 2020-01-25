@@ -286,10 +286,12 @@ img {
   font-size: 1.7rem;
   font-weight: bold;
   text-align: left;
+  width: 100%;
 }
 .newsContents__dateAndLink {
   font-size: 1.5rem;
   margin-top: 1rem;
+  width: 100%;
 }
 .newsLink {
   display: inline-block;
