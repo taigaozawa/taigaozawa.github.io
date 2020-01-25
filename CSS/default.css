@@ -842,7 +842,7 @@ img {
   line-height: 3.5rem;
 }
 .contactInfo__info {
-  line-height: 3.5rem;
+  line-height: 5rem;
 }
 .twitterButton {
   padding: 0rem 1rem 0.2rem 0.5rem;
@@ -852,6 +852,8 @@ img {
   color: white;
 }
 .contactInfoTwitterLink {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   display: flex;
 }
 .contactInfoTwitterLink:hover .twitterButton {
