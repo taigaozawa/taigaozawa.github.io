@@ -272,8 +272,8 @@ img {
   width: 100%;
   position: relative;
   background: linear-gradient(to right, rgb(2, 32, 92),rgba(3, 40, 114, 0.705) 70%, rgba(3, 40, 114, 0.26));
-  padding-top: 12rem;
-  padding-bottom: 12rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   color: white;
 }
 .pageTitleLetters {
@@ -289,18 +289,16 @@ img {
   transform: translate(-50%,-50%);
 }
 .pageTitleHeading__jpn {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
 }
 .pageTitleHeading__eng {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
 }
 .pageTitleInfo {
   margin-top: 0.5rem;
   font-size: 1.5rem;
   font-weight: normal;
-}
-.pageTitle--profile {
-  background: linear-gradient(to right, rgb(255, 115, 0), rgba(0, 0, 0, 0))
+  margin-bottom: 2rem;
 }
 /* PAGE TITLE レスポンシブ */
 @media screen and (max-width:700px) {
