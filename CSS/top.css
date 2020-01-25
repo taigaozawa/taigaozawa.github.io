@@ -116,12 +116,18 @@ img {
 .introJpn__posi {
   font-size: 2rem;
   font-weight: bold;
+  display : -ms-flexbox; /*for IE10*/
+  display: flex;
+  -ms-flex-wrap : wrap; 
+  flex-wrap: wrap;
 }
 .introEng__posi {
   font-size: 1.7rem;
   font-weight: bold;
   line-height: 2rem;
+  display : -ms-flexbox; /*for IE10*/
   display: flex;
+  -ms-flex-wrap : wrap; 
   flex-wrap: wrap;
   margin-top: 0.5rem;
 }
