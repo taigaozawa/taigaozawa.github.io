@@ -36,7 +36,7 @@
   text-align: right;
   margin-right: 3rem;
   width: 20rem;
-  flex-basix: 20%;
+  flex-basis: 20%;
 }
 .profileCategory__title--light {
   color: rgb(197, 197, 197);
@@ -111,6 +111,7 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  -ms-flex-wrap : nowrap; /*for IE10*/
 }
 .skillLogoColumn {
   display: flex;
