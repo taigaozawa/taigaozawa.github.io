@@ -88,6 +88,7 @@ img {
   margin-top: 3rem;
   margin-bottom: 3rem;
   margin-right: 1rem;
+  max-width: 100%;
 }
 .introJpn {
   border-bottom: solid 2px orange;
@@ -96,12 +97,14 @@ img {
   flex-wrap: wrap;
   padding-bottom: 1rem;
   line-height: 3.5rem;
+  max-width: 100%;
 }
 .introEng {
   margin-top: 1rem;
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
+  max-width: 100%;
 }
 .introJpn__name {
   font-weight: bold;
