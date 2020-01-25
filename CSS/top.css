@@ -265,7 +265,7 @@ img {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: flex-start;
   text-align: left;
 }
 .newsContents:hover {
@@ -274,6 +274,7 @@ img {
 .newsContents__info {
   font-size: 1.7rem;
   font-weight: bold;
+  text-align: left;
 }
 .newsContents__dateAndLink {
   font-size: 1.5rem;
