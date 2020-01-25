@@ -393,6 +393,10 @@ img {
     padding: 1.5rem;
     text-align: center;
     justify-content: center;
+    left: 50%;
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
   }
   .wideMessageBox__jpn {
     font-size: 2rem;
