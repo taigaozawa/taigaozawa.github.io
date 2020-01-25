@@ -312,11 +312,3 @@ img {
     line-height: 2rem;
   }
 }
-
-.buttonContainer {
-  display: flex;
-}
-.buttonContainer__button {
-  margin-top: 1rem;
-  margin-right: 1rem;
-}

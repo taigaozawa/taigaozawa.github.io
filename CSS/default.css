@@ -11,6 +11,7 @@ html {
 main {
   display: block;
   max-width: 100%;
+  overflow-x: scroll;
 }
 .stdLink {
   color: rgb(0, 93, 214);
