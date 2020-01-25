@@ -37,7 +37,7 @@
   text-align: right;
   margin-right: 3rem;
   min-width: 10rem;
-  flex-basis: 15%;
+  flex-basis: 20%;
 }
 .profileCategory__title--light {
   color: rgb(197, 197, 197);
@@ -45,7 +45,7 @@
 .profileCategory__contents {
   width: 80%;
   font-size: 2rem;
-  flex-basis: 85%;
+  flex-basis: 80%;
   display:flex;
   flex-wrap: wrap;
 }
