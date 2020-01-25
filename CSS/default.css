@@ -299,6 +299,7 @@ img {
   font-size: 1.5rem;
   font-weight: normal;
   margin-bottom: 2rem;
+  width: 95%;
 }
 /* PAGE TITLE レスポンシブ */
 @media screen and (max-width:700px) {
@@ -321,9 +322,10 @@ img {
   }
   .pageTitleInfo {
     font-size: 1.2rem;
-  }
-  .pageTitleInfo {
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
