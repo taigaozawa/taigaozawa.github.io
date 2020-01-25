@@ -167,12 +167,14 @@ img {
     padding-bottom: 1rem;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   .introEng {
     justify-content: center;
     text-align: center;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   .introJpn__name {
     font-size: 2.8rem;
@@ -186,12 +188,14 @@ img {
   .introEng__posi {
     margin-top: 0.3rem;
     justify-content: center;
+    width: 100%;
   }
   .introJpn__posi {
     line-height: 2rem;
     font-size: 1.5rem;
     text-align: center;
     justify-content: center;
+    width: 100%;
   }
   .introButtonContainer {
     flex-direction: column;
