@@ -83,10 +83,12 @@
   .profileCategory__title, .profileCategory__title--light {
     font-size: 1.5rem;
     margin-right: 1.5rem;
-    width: 20px;
+    width: 10rem;
+    flex-basis: 20%;
   }
   .profileCategory__contents {
     font-size: 1.7rem;
+    flex-basis: 80%;
   }
 }
 @media screen and (max-width:470px) {
