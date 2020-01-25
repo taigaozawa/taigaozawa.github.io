@@ -83,7 +83,7 @@
   .profileCategory__title, .profileCategory__title--light {
     font-size: 1.5rem;
     margin-right: 2rem;
-    width: 10rem;
+    width: 50rem;
     flex-basis: 20%;
   }
   .profileCategory__contents {
