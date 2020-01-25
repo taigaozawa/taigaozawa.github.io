@@ -7,10 +7,10 @@ html {
   font-size: 10px; /* 1rem = 10px と定義 */
   font-family: "Helvetica", "Arial", "Hiragino Kaku Gothic ProN", "NotoSansCJKjp", "メイリオ", sans-serif;
   font-weight: 400;
-  overflow:auto;
 }
 main {
   display: block;
+  max-width: 100%;
 }
 .stdLink {
   color: rgb(0, 93, 214);
