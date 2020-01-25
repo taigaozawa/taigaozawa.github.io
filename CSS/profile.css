@@ -35,7 +35,8 @@
   color: rgb(68, 68, 68);
   text-align: right;
   margin-right: 3rem;
-  flex-basis: 20%;
+  width: 20rem;
+  flex-basix: 20%;
 }
 .profileCategory__title--light {
   color: rgb(197, 197, 197);

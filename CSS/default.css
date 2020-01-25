@@ -8,6 +8,9 @@ html {
   font-family: "Helvetica", "Arial", "Hiragino Kaku Gothic ProN", "NotoSansCJKjp", "メイリオ", sans-serif;
   font-weight: 400;
 }
+main {
+  display: block;
+}
 .stdLink {
   color: rgb(0, 93, 214);
 }
