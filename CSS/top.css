@@ -80,8 +80,10 @@ img {
 
 /*== MAIN ===========================*/
 .introContainer {
-  display: flex;
   align-items: center;
+  display : -ms-flexbox; /*for IE10*/
+  display: flex;
+  -ms-flex-wrap : wrap; 
   flex-wrap: wrap;
 }
 .introContainer__info {
@@ -92,19 +94,21 @@ img {
 }
 .introJpn {
   border-bottom: solid 2px orange;
+  display : -ms-flexbox; /*for IE10*/
   display: flex;
-  align-items: baseline;
+  -ms-flex-wrap : wrap; 
   flex-wrap: wrap;
+  align-items: baseline;
   padding-bottom: 1rem;
   line-height: 3.5rem;
-  max-width: 100%;
 }
 .introEng {
   margin-top: 1rem;
+  display : -ms-flexbox; /*for IE10*/
   display: flex;
-  align-items: baseline;
+  -ms-flex-wrap : wrap; 
   flex-wrap: wrap;
-  max-width: 100%;
+  align-items: baseline;
 }
 .introJpn__name {
   font-weight: bold;
@@ -137,7 +141,9 @@ img {
   max-width: 100%;
 }
 .introButtonContainer{
+  display : -ms-flexbox; /*for IE10*/
   display: flex;
+  -ms-flex-wrap : wrap; 
   flex-wrap: wrap;
 }
 .introButtonContainer__stdButton{
