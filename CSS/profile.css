@@ -36,8 +36,8 @@
   color: rgb(68, 68, 68);
   text-align: right;
   margin-right: 3rem;
-  width: 10rem;
-  flex-basis: 20%;
+  min-width: 10rem;
+  flex-basis: 15%;
 }
 .profileCategory__title--light {
   color: rgb(197, 197, 197);
@@ -45,7 +45,7 @@
 .profileCategory__contents {
   width: 80%;
   font-size: 2rem;
-  flex-basis: 80%;
+  flex-basis: 85%;
   display:flex;
   flex-wrap: wrap;
 }
@@ -83,12 +83,9 @@
   .profileCategory__title, .profileCategory__title--light {
     font-size: 1.5rem;
     margin-right: 2rem;
-    width: 50rem;
-    flex-basis: 20%;
   }
   .profileCategory__contents {
     font-size: 1.7rem;
-    flex-basis: 80%;
   }
 }
 @media screen and (max-width:470px) {
@@ -100,7 +97,7 @@
     font-size: 1.2rem;
     flex-basis: 25%;
     margin-right: 1.5rem;
-    width: 15px;
+    min-width: 5rem;
   }
   .profileCategory__contents {
     font-size: 1.5rem;
