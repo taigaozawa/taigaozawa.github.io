@@ -21,8 +21,11 @@ img {
   position: relative;
 }
 
-.welcome__image {
+.welcome__image--l, .welcome__image--s {
   width: 100%;
+}
+.welcome__image--l {
+  display: none;
 }
 
 .welcome__message{
@@ -66,6 +69,14 @@ img {
   }
   .welcomeMessageBox__eng{
     font-size: 2rem;
+  }
+}
+@media screen and (max-width:550px) {
+  .welcome__image--s {
+    display: none;
+  }
+  .welcome__image--l {
+    display: block;
   }
 }
 @media screen and (max-width:350px) {
