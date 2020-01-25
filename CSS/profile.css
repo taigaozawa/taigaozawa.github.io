@@ -35,7 +35,7 @@
   color: rgb(68, 68, 68);
   text-align: right;
   margin-right: 3rem;
-  width: 20rem;
+  width: 25rem;
   flex-basis: 20%;
 }
 .profileCategory__title--light {
@@ -93,6 +93,7 @@
   .profileCategory__title, .profileCategory__title--light {
     font-size: 1.2rem;
     flex-basis: 25%;
+    width: 15px;
   }
   .profileCategory__contents {
     font-size: 1.5rem;
