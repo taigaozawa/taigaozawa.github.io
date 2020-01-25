@@ -11,7 +11,7 @@ html {
 main {
   display: block;
   width: 100%;
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 .stdLink {
   color: rgb(0, 93, 214);
@@ -827,7 +827,9 @@ img {
   font-size: 1.9rem;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 1rem;
+  max-width: 100%;
 }
 .contactInfo__heading {
   font-weight: bold;
