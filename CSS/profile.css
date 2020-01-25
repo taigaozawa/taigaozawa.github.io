@@ -80,6 +80,7 @@
   .profileCategory__title, .profileCategory__title--light {
     font-size: 1.5rem;
     margin-right: 1.5rem;
+    width: 20px;
   }
   .profileCategory__contents {
     font-size: 1.7rem;
