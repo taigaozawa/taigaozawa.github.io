@@ -90,7 +90,7 @@ img {
   margin-top: 3rem;
   margin-bottom: 3rem;
   margin-right: 1rem;
-  max-width: 100%;
+  max-width: 1000px;
 }
 .introJpn {
   border-bottom: solid 2px orange;
@@ -101,7 +101,7 @@ img {
   align-items: baseline;
   padding-bottom: 1rem;
   line-height: 3.5rem;
-  max-width: 100%;
+  max-width: 1000px;
 }
 .introEng {
   margin-top: 1rem;
@@ -110,19 +110,19 @@ img {
   -ms-flex-wrap : wrap; 
   flex-wrap: wrap;
   align-items: baseline;
-  max-width: 100%;
+  max-width: 1000px;
 }
 .introJpn__name {
   font-weight: bold;
   font-size: 3rem;
   margin-right: 6rem;
-  max-width: 100%;
+  max-width: 1000px;
 }
 .introEng__name {
   font-weight: bold;
   font-size: 2.5rem;
   margin-right: 3rem;
-  max-width: 100%;
+  max-width: 1000px;
 }
 .introJpn__posi {
   font-size: 2rem;
@@ -131,7 +131,7 @@ img {
   display: flex;
   -ms-flex-wrap : wrap; 
   flex-wrap: wrap;
-  max-width: 100%;
+  max-width: 1000px;
 }
 .introEng__posi {
   font-size: 1.7rem;
@@ -142,7 +142,7 @@ img {
   -ms-flex-wrap : wrap; 
   flex-wrap: wrap;
   margin-top: 0.5rem;
-  max-width: 100%;
+  max-width: 1000px;
 }
 .introButtonContainer{
   display : -ms-flexbox; /*for IE10*/
