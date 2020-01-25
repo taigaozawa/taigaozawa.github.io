@@ -133,6 +133,7 @@ img {
   -ms-flex-wrap : wrap; 
   flex-wrap: wrap;
   max-width: 1000px;
+  width: 100%;
 }
 .introEng__posi {
   font-size: 1.7rem;
@@ -144,6 +145,7 @@ img {
   flex-wrap: wrap;
   margin-top: 0.5rem;
   max-width: 1000px;
+  width: 100%;
 }
 .introButtonContainer{
   display : -ms-flexbox; /*for IE10*/
