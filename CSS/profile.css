@@ -27,6 +27,7 @@
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
   line-height: 2.7rem;
+  min-width: 700px;
 }
 .profileCategory__title, .profileCategory__title--light {
   font-size: 1.7rem;
@@ -73,6 +74,7 @@
   }
   .profileCategory {
     line-height: 2.2rem;
+    min-width: 300px;
   }
   .profileCategory__title, .profileCategory__title--light {
     font-size: 1.5rem;
