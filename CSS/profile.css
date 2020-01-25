@@ -186,7 +186,9 @@
   color: black;
 }
 
-
+.profileINfo__github {
+  max-width: 100%;
+}
 .githubAccount {
   display: flex;
   align-items: center;
