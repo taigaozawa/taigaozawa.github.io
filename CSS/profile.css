@@ -107,6 +107,7 @@
   text-align: center;
 }
 .profileInfo__logo {
+  display : -ms-flexbox;
   display: flex;
   flex-direction: row;
   justify-content: center;
