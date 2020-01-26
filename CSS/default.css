@@ -343,13 +343,14 @@ img {
 /* STANDARD HEADING */
 .stdHeading, .stdHeading--light, .stdHeading--record, .stdHeading--study, .stdHeading--eTexts, .stdHeading--travel , .stdHeading--orange{
   font-size: 2rem;
-  border-left: solid 10px rgb(155, 155, 155);
+  border-left: solid 10px rgb(150, 150, 150);
   padding-left: 1rem;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
   background-color: rgb(39, 39, 39);
   color: white;
 }
+
 .stdHeading--light {
   border-left: solid 10px rgb(31, 31, 31);
   border-bottom: solid 1px rgb(31, 31, 31);
@@ -360,16 +361,21 @@ img {
   border-left: solid 10px rgb(0, 102, 218);
 }
 .stdHeading--study {
-  border-left: solid 10px rgb(73, 182, 255);
+  border-left: solid 10px rgb(0, 102, 218);
 }
 .stdHeading--eTexts {
-  border-left: solid 10px rgb(0, 219, 18);
+  border-left: solid 10px rgb(0, 102, 218);
 }
 .stdHeading--travel {
-  border-left: solid 10px orange;
+  border-left: solid 10px rgb(0, 102, 218);
 }
 .stdHeading--orange {
   border-left: solid 10px orange;
+}
+@media screen and (max-width:700px) {
+  .stdHeading, .stdHeading--light, .stdHeading--record, .stdHeading--study, .stdHeading--eTexts, .stdHeading--travel , .stdHeading--orange{
+    font-size: 1.8rem;
+  }
 }
 
 /* STANDARD LIST */
@@ -576,6 +582,9 @@ img {
 }
 
 /* NOTES */
+.background--gray {
+  background-color: rgb(221, 221, 221);
+}
 .noteGenre__noteContainer {
   display: flex;
   justify-content: left;
@@ -587,66 +596,49 @@ img {
 .noteBox, .noteBox--record {
   margin-top: 2rem;
   margin-left: 0.5rem;
-  margin-right: 1rem
+  margin-right: 1rem;
+  background-color: white;
+  border-left: solid 5px orange;
 }
 .noteBox--record {
   width: 98%;
 }
-.noteBox--hover:hover > .noteBox__contents {
-  background-color: rgb(224, 224, 224);
+.noteBox--record:hover {
+  background-color: rgb(243, 243, 243);
 }
-.noteBox--record--hover:hover > .noteBox__contents {
-  background-color: rgb(224, 224, 224);
+.noteBox:hover {
+  background-color: rgb(243, 243, 243);
 }
 .noteBox__heading, .noteBox__heading--record, .noteBox__heading--study, .noteBox__heading--eTexts, .noteBox__heading--travel {
-  background-color: rgb(44, 44, 44);
-  color: white;
-  padding-top:0.7rem;
-  padding-bottom: 0.5rem;
-  padding-left: 2.5rem;
+  color: black;
+  padding-top:1rem;
+  padding-bottom: 0.3rem;
+  padding-left: 1.5rem;
   padding-right: 5rem;
+  border-bottom: solid 1px orange;
   font-size: 1.7rem;
-  border-radius: 20px 0 0 0;
-  border-right: solid 5px gray;
 }
 @media screen and (max-width:700px) {
   .noteBox__heading, .noteBox__heading--record, .noteBox__heading--study, .noteBox__heading--eTexts, .noteBox__heading--travel {
     border-radius: 15px 0 0 0;
-    padding-left: 1.5rem;
+    padding-left: 1rem;
     padding-right: 1rem;
   }
   .noteGenre__noteContainer {
     margin-right: 0;
+    margin-left: 0;
   }
   .noteBox, .noteBox--record {
   margin-right: 0;
   }
 }
 
-.noteBox__heading--record {
-  background-color: rgb(0, 70, 150);
-}
-.noteBox__heading--study {
-  background-color: rgb(143, 210, 255);
-  color: black;
-}
-.noteBox__heading--eTexts {
-  background-color: rgb(104, 219, 110);
-  color: black;
-}
-.noteBox__heading--travel {
-  background-color: rgb(241, 175, 53);
-  color: black;
-}
 .noteBox__contents {
-  background-color: rgb(204, 204, 204);
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   padding-top: 1.5rem;
   padding-bottom: 3rem;
-  padding-left:2.5rem;
+  padding-left:1.5rem;
   padding-right: 2rem;
-  border-radius: 0 0 0 20px;
-  border-right: solid 5px gray;
 }
 .noteInfo--link {
   color: rgb(0, 93, 214);
@@ -662,7 +654,7 @@ img {
   .noteBox__contents {
     font-size: 1.6rem;
     line-height: 2.2rem;
-    padding: 1.5rem;
+    padding: 1rem;
   }
 }
 
