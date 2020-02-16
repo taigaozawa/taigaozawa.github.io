@@ -320,7 +320,7 @@ img {
     align-items: center;
   }
   .pageTitleHeading__jpn {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .pageTitleHeading__eng {
     font-size: 1.8rem;
@@ -853,4 +853,32 @@ img {
 }
 .contactInfoTwitterLink:hover>.contactInfo__twitterIcon {
   color: rgb(74, 153, 255);
+}
+
+/* サイト一覧ページ */
+.websitesList {
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  border-bottom: solid 2px orange;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+.websitesList__title {
+  margin-right: 1rem;
+}
+.websites__site {
+  font-size: 2rem;
+}
+.siteContents {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width:400px) {
+  .websitesList {
+    font-size: 1.7rem;
+  }
 }
