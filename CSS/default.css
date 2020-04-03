@@ -165,7 +165,7 @@ img {
     right: 0;
     z-index: 999;/*最前面に*/
     width: 100%;/*右側に隙間を作る（閉じるカバーを表示）*/
-    background: rgba(0, 0, 0, 0.904);/*背景色*/
+    background: rgba(255, 255, 255, 0.877);/*背景色*/
     display: none;
   }
   
@@ -188,15 +188,17 @@ img {
     margin: 1rem 0 0 0;
     padding: 1rem;
     width: 90%;
-    border-bottom: solid gray 1px;
+    border-bottom: solid rgb(0, 0, 0) 1px;
+    color: black;
   }
   .itemAnchor:hover {
-    border-bottom: solid gray 1px;
-    color: orange;
+    border-bottom: solid rgb(0, 0, 0) 1px;
+    color: rgb(131, 131, 131);
   }
   .menuItem {
     display: flex;
     justify-content: left;
+    
   }
   .menuItem__name {
     margin-right: 1rem;
@@ -687,7 +689,7 @@ img {
   margin: 2rem;
 }
 .githubAnchor .fa-github-square {
-  font-size: 10rem;
+  font-size: 7rem;
 }
 .githubAnchor:hover > .fa-github-square {
   color: rgb(78, 78, 78);
@@ -696,11 +698,11 @@ img {
   color: rgba(0, 110, 255, 0.74);
 }
 .githubCaption {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 .githubCaptionInfo {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
   color: rgb(0, 110, 255);
 }
