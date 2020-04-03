@@ -2,6 +2,9 @@
      profile.css   
 *******************/
 
+.fa-external-link-alt {
+  font-size: smaller;
+}
 .profileInfo {
   display: flex;
   flex-direction: column;
@@ -49,6 +52,13 @@
   display:flex;
   flex-wrap: wrap;
 }
+.profileCategory__contents--links {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: 1.6rem;
+}
+
 .profileButtonContainer {
   display: flex;
   flex-wrap: wrap;
@@ -185,3 +195,4 @@
 .fa-github {
   color: black;
 }
+
