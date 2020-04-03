@@ -48,7 +48,7 @@ img {
 
 /* DEFAULT HEADER */
 .defaultHeader {
-  background-color: rgba(0, 0, 0, 0.966);
+  background-color: rgba(0, 0, 0, 0.815);
   color: white;
   padding-top: 2.4rem;
 }
@@ -57,7 +57,7 @@ img {
 }
 .headerInner__logo {
   font-weight: bold;
-  color: orange;
+  color: rgb(255, 196, 0);
   font-size: 2rem;
 }
 @media all and (-ms-high-contrast: none){
@@ -87,7 +87,7 @@ img {
   padding-left: 0.5rem;
 }
 .itemAnchor:hover {
-  border-bottom: solid 2px orange;
+  border-bottom: solid 2px rgb(255, 196, 0);
 }
 .menuItem {
   line-height: 1.5rem;
