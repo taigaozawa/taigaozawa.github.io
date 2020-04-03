@@ -59,6 +59,9 @@
   font-size: 1.6rem;
 }
 
+  
+
+
 .profileButtonContainer {
   display: flex;
   flex-wrap: wrap;
@@ -100,6 +103,9 @@
     flex-basis: 80%;
     width: 80%;
     min-width: 300px;
+  }
+  .profileCategory__contents--links {
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width:470px) {
