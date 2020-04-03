@@ -526,6 +526,11 @@ img {
   background-color: rgb(221, 221, 221);
   border-radius: 1rem;
 }
+.category__subCategory--wide {
+  width: 97%;
+  background-color: rgb(0, 78, 151);
+  color: white;
+}
 .subCategory {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -539,6 +544,10 @@ img {
   line-height: 2rem;
   padding-left: 1rem;
   padding-right: 1.5rem;
+}
+.subCategory__heading--basic {
+  padding-bottom: 1px;
+  border-bottom: solid 1px white;
 }
 .subCategory__heading--computer {
   border-bottom: solid 2px rgb(255, 0, 0);
@@ -568,6 +577,9 @@ img {
 }
 .contents__item--hover:hover > .contents__item--underline {
   border-bottom: solid 1px rgb(0, 0, 0);
+}
+.contents__item--hoverYellow:hover {
+  color: rgb(252, 193, 1);
 }
 
 
